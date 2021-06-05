@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-page</title>
+    <link rel="stylesheet" href="preloader.css">
+</head>
+<body>
+  
+ 
+
+ 
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    
+    <div class="loader2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+body
+{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: #090136;
+    overflow: hidden;
+
+}
+
+
+.loader
+{
+    position: relative;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#1cff14, #ffeb3b, #ff3300);
+    animation:animate  1s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform:rotateX(0deg);
+    }
+    100%
+    {
+        transform:rotateX(360deg);
+    }
+
+}
+
+
+.loader span
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+}
+
+.loader span:nth-child(1)
+{
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2)
+{
+    filter: blur(10px);
+}
+
+.loader span:nth-child(3)
+{
+    filter: blur(25px);
+}
+
+.loader span:nth-child(4)
+{
+    filter: blur(50px);
+}
+
+
+.loader:after
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: #090136;
+    border-radius: 50%;
+  
+}
+
+
+/*--------------loader 2---------------------------*/
+
+.loader1
+{
+    position: relative;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background: linear-gradient(#1cff14, #ffeb3b, #ff3300);
+    animation:animate1 1s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%
+    {
+        transform:rotateX(0deg);
+    }
+    100%
+    {
+        transform:rotateX(360deg);
+    }
+
+}
+
+
+.loader1 span
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+}
+
+.loader1 span:nth-child(1)
+{
+    filter: blur(5px);
+}
+
+.loader1 span:nth-child(2)
+{
+    filter: blur(10px);
+}
+
+.loader1 span:nth-child(3)
+{
+    filter: blur(25px);
+}
+
+.loader1 span:nth-child(4)
+{
+    filter: blur(50px);
+}
+
+
+.loader1:after
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: #090136;
+    border-radius: 50%;
+  
+}
+
+
+/*--------------loader 2---------------------------*/
+
+.loader2
+{
+    position: relative;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(#1cff14, #ffeb3b, #ff3300);
+    animation:animate2 1s linear infinite;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform:rotateX(0deg);
+    }
+    100%
+    {
+        transform:rotateX(360deg);
+    }
+
+}
+
+
+.loader2 span
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+}
+
+.loader2 span:nth-child(1)
+{
+    filter: blur(5px);
+}
+
+.loader2 span:nth-child(2)
+{
+    filter: blur(10px);
+}
+
+.loader2 span:nth-child(3)
+{
+    filter: blur(25px);
+}
+
+.loader2 span:nth-child(4)
+{
+    filter: blur(50px);
+}
+
+
+.loader2:after
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: #090136;
+    border-radius: 50%;
+  
+}
