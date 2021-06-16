@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="background-wall.css">
+</head>
+<body>
+    <section class="banner">
+    <div class="container">
+    <div id="secne">
+            <h1 id="text">
+                <span data-depth="2">S</span>
+                <span data-depth="6">U</span>
+                <span data-depth="5">M</span>
+                <span data-depth="-8">M</span>
+                <span data-depth="-3">E</span>
+                <span data-depth="6">R</span>
+            </h1>
+            <div class="layer" data-depth="0.5"><img src="ice-cream (1).png" alt=""></div>
+            <div class="layer" data-depth="0.75"><img src="watermelon (1).png" alt=""></div>
+            <div class="layer" data-depth="1"><img src="cake.png" alt=""></div>
+            <div class="layer" data-depth="-0.25"><img src="ice-cream.png" alt=""></div>
+            <div class="layer" data-depth="0.625"><img src="parasol.png" alt=""></div>
+            <div class="layer" data-depth="-0.375"><img src="watermelon.png" alt=""></div>
+            <div class="layer" data-depth="0.5"><img src="summer-sale.png" alt=""></div>
+    </div>
+    </div>
+</section>
+<!---------------script----------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    var text = document.getElementById('text');
+    var secne = document.getElementById('secne');
+    var parallaxInstance = new Parallax(text);
+    var parallaxInstance = new Parallax(secne);
+</script>
+</body>
+</html>
