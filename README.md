@@ -1,3 +1,7 @@
 # CSS-ANIMATION-PROJECTS
-3d animated cards  with  css  efftects
-CSS  EFFECTS
+
+3-D  animation with the help of CSS
+All projects are based  on CSS,HTML5 and JavaScript
+Made by
+shubhambawnkar
+email- shubhambawankar735@gmail.com
