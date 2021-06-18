@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive  login and  signup page</title>
+    <link rel="stylesheet" href="login-signup.css">
 
+</head>
+<body>
+    <div class="container">
+        <div class="blueBg">
+
+            <div class="box signin">
+                <h2>Already Have an Account ?</h2>
+                <button class="signinBtn" onclick="func2()">Sign in</button>
+            </div>
+
+            <div class="box signup">
+                <h2>Don't Have an Account ?</h2>
+                <button class="signinBtn" onclick="func1()" >Sign up</button>
+            </div>
+
+        </div>
+
+        <div class="formBx">
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        const signinBtn = document.querySelector(".signinBtn");
+        const signupBtn = document.querySelector(".signupBtn");
+        const formBx = document.querySelector(".formBx");
+    
+        function func1()
+        {
+                formBx.classList.add("active")
+        }
+    
+        function func2()
+        {
+                formBx.classList.remove("active")
+        }
+
+    </script>
+    
+    
+</body>
+
+
+</html>

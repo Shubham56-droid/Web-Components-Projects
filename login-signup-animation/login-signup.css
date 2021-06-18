@@ -1,1 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #03a9f4;
+    transition: 0.5s;
+}
+
+.container
+{
+    position: relative;
+    width:800px;
+    height:500px;
+    margin:20px;
+    
+}
+
+.blueBg
+{
+    position: absolute;
+    top:40px;
+    width:100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.26);
+}
+
+.blueBg .box
+{
+    position: relative;
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blueBg .box h2
+{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.blueBg .box button
+{
+    cursor: pointer;
+    padding: 10px 20px ;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.formBx
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:50%;
+    height:100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+
+}
+
+.formBx.active
+{
+    left:50%;
+}
