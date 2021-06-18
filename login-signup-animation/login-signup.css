@@ -14,10 +14,14 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #03a9f4;
+    background: radial-gradient(rgb(0, 255, 179),rgb(38, 0, 255));
     transition: 0.5s;
 }
 
+body.active
+{
+    background:radial-gradient(rgb(255, 251, 10),rgb(255, 0, 0));
+}
 .container
 {
     position: relative;
@@ -90,4 +94,38 @@ body
 .formBx.active
 {
     left:50%;
+}
+
+.formBx .form
+{
+    position: absolute;
+    left: 0;
+    width:100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.formBx .form form
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx .form form h3
+{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight:500;
+}
+
+.formBx .form form input
+{
+    width:100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
 }

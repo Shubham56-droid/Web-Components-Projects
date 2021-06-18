@@ -25,7 +25,16 @@
         </div>
 
         <div class="formBx">
-
+            <div class="form signinForm">
+                <form>
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <a href="#" class="forgrt">Forget Password</a>
+                    
+                </form>
+            </div>
 
         </div>
     </div>
@@ -36,16 +45,19 @@
         const signinBtn = document.querySelector(".signinBtn");
         const signupBtn = document.querySelector(".signupBtn");
         const formBx = document.querySelector(".formBx");
+        const body = document.querySelector("body");
     
         function func1()
         {
                 formBx.classList.add("active")
+                body.classList.add("active")
         }
     
         function func2()
         {
                 formBx.classList.remove("active")
-        }
+                body.classList.remove("active")
+        } 
 
     </script>
     
