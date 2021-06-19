@@ -88,7 +88,7 @@ body.active
     align-items: center;
     box-shadow: 0 5px 45px rgba(0,0,0,0.25);
     transition: 0.5s ease-in-out;
-
+    overflow: hidden;
 }
 
 .formBx.active
@@ -102,7 +102,30 @@ body.active
     left: 0;
     width:100%;
     padding: 50px;
-    transition: 0.5s;
+    transition: 0.5s ;
+
+}
+.formBx .signinForm
+{
+    transition-delay: 0.25s;
+}
+
+.formBx.active .signinForm
+{
+    left:-100%;
+    transition-delay: 0s;
+}
+
+.formBx .signupForm
+{
+    left:100%;
+    transition-delay: 0s;
+}
+
+.formBx.active .signupForm
+{
+    left:0;
+    transition-delay: 0.25s;
 }
 
 .formBx .form form
@@ -128,4 +151,73 @@ body.active
     outline: none;
     font-size: 16px;
     border: 1px solid #333;
+}
+
+.formBx .form form input[type="submit"]
+{
+    background: #03a9f4;
+    border: none;
+    color: #fff;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.formBx.active .signupForm input[type="submit"]
+{
+    background: rgb(255, 21, 0);
+}
+
+
+.formBx .form form .forget
+{
+    color: #333;
+    text-decoration: none;
+}
+
+
+.formBx .form form .forget:hover
+{ 
+    color:blueviolet;
+}
+
+@media (max-width:991px)
+{
+    .container
+    {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .blueBg
+    {
+        top:0;
+        height:100%;
+    }
+    .formBx
+    {
+        width:100%;
+        height:500px;
+        top:0;
+        box-shadow: none;
+    }
+    .blueBg .box
+    {
+        position: absolute;
+        width:100%;
+        height:150px;
+        bottom:0;
+    }
+    .box.signin
+    {
+        top:0;
+    }
+    .formBx.active
+    {
+        left:0;
+        top:150px;
+    }
+    
+
 }
