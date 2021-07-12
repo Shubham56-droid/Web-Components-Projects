@@ -5,7 +5,10 @@ All projects are based  on CSS,HTML5 and JavaScript
 Made by
 shubhambawnkar
 email- shubhambawankar735@gmail.com
-
+<br>
 HOW  TO VIEW THE  FILES-
 USE git  COMMANDS
-->  git clone 
+<br>
+->  git clone git@github.com:Shubham56-droid/HTML-CSS-JAVASCRIPT-ANIMATION.git
+
+then  go  to each  folder  and  open  the  floder  using vscode  all  the  required  files  are presents  in  folders.
