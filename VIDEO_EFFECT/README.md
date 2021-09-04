@@ -12,6 +12,6 @@
 <br/>
 <h2>Images Of Website</h2>
 Light Mode
-<img src="./images/Screenshot(402)">
+<img src="./images/Screenshot (402).png">
 Dark Mode
-<img src="./images/Screenshot(403)">
+<img src="./images/Screenshot (403).png">
