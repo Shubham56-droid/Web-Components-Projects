@@ -7,7 +7,7 @@
   <li>JavaSript</li>
 </ul>
 <h2>Images</h2>
-<img src="./images/" />
-<img src="./images/" />
+<img src="./images/Screenshot (412).png" />
+<img src="./images/Screenshot (413).png" />
 <h2>Link to the Website</h2>
 <p>visit the website <a here="https://cranky-stonebraker-9b790c.netlify.app/">here</a></p>
