@@ -6,7 +6,7 @@
   <li>JavaScript</li>
 </ul>
 <h2>Images Of Websites</h2>
-<img src="./images/Screenshot (457)"/>
-<img src="./images/Screenshot (458)"/>
+<img src="./images/Screenshot (457).png"/>
+<img src="./images/Screenshot (458).png"/>
 <p>Link to the website <a href="https://inspiring-franklin-e33489.netlify.app/">here</a></p>
 <p>Link to the project <a href="https://github.com/Shubham56-droid/HTML-CSS-JavaScrpt-Animation-Effects/edit/main/login-signup-animation/">here</a></p>
