@@ -5,5 +5,5 @@
   <li>CSS</li>
 </ul>
 <h2>Images</h2>
-<img src="./images/"/>
+<img src="./images/Screenshot (462).png"/>
 <p>Link to te website <a href="https://vigorous-galileo-e78b1b.netlify.app/">here</a></p>
