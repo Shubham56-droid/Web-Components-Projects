@@ -10,3 +10,4 @@
 <h2>Images</h2>
 <img src="./images/clock-resume.png" />
 <h2>Link to the website</h2>
+<p>link is <a href="https://infallible-lewin-87d2b9.netlify.app/">here</a>
