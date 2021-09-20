@@ -8,6 +8,6 @@
 <h2>About</h2>
 <p>It is a parallx wibsite with a forest background</p>
 <h2>Images</h2>
-<img src="./images/Screenshot (493).png">
+<img src="./images/Screenshot (505).png">
 <h2>Link of website</h2>
 <p>visit the website <a href="">here</a>.</p>
