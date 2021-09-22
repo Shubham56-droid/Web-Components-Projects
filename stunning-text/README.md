@@ -5,7 +5,8 @@
   <li>CSS</li>
 </ul>
 <h2>Images</h2>
-<img src="./images/"/>
+<img src="./images/Screenshot (522).png"/>
+<img src="./images/Screenshot (523).png"/>
 <h2>Link</h2>
 <p>link of the website <a href="">here</a>
   
