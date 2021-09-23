@@ -7,6 +7,6 @@
 <h2>About Us</h2>
 <p>It is a animated flying rocket preloader with amazing  effects using css pls do check out</p>
 <h2>Images</h2>
-<img src="./images/Screenshot().png" />
+<img src="./images/Screenshot (524).png" />
 <h2>Link To Website</h2>
 <p>To visit the website click <a href="">here</a>.</p>
