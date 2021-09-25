@@ -7,4 +7,4 @@
 <h2>Images</h2>
 <img src="./images/Screenshot(526).png" />
 <h2>Link</h2>
-<p>click here to <a href="">visit</a> website</p>
+<p>click here to <a href="https://gracious-bartik-7c1478.netlify.app/">visit</a> website</p>
