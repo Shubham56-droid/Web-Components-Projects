@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Player</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        @media (max-width:480px) {
+            .btgrp {
+                display: table-footer-group;
+                padding-left: 0;
+                margin-left: 0;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color:#5c80a1;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="drum-set.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" style="font-size: 35px;" href="../index.html"> play Music</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Button group -->
+
+    <div class="btgrp btn-toolbar col-lg-8" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="firstSecondThird btn btn-secondary a">a</button>
+            <button type="button" class="firstSecondThird btn btn-secondary b">b</button>
+            <button type="button" class="firstSecondThird btn btn-secondary c">c</button>
+            <button type="button" class="firstSecondThird btn btn-secondary d ">d</button>
+            <button type="button" class="firstSecondThird btn btn-secondary e">e</button>
+            <button type="button" class="firstSecondThird btn btn-secondary f">f</button>
+        </div>
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="Second group">
+            <button type="button" class="firstSecondThird btn btn-secondary g">g</button>
+            <button type="button" class="firstSecondThird btn btn-secondary h">h</button>
+            <button type="button" class="firstSecondThird btn btn-secondary i">i</button>
+            <button type="button" class="firstSecondThird btn btn-secondary j">j</button>
+            <button type="button" class="firstSecondThird btn btn-secondary k">k</button>
+            <button type="button" class="firstSecondThird btn btn-secondary l">l</button>
+        </div>
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="Third group">
+            <button type="button" class="firstSecondThird btn btn-secondary m">m</button>
+            <button type="button" class="firstSecondThird btn btn-secondary n">n</button>
+            <button type="button" class="firstSecondThird btn btn-secondary o">o</button>
+            <button type="button" class="firstSecondThird btn btn-secondary p">p</button>
+            <button type="button" class="firstSecondThird btn btn-secondary q">q</button>
+            <button type="button" class="firstSecondThird btn btn-secondary r">r</button>
+        </div>
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="Forth group">
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary s">s</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary t">t</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary u">u</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary v">v</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary w">w</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary x">x</button>
+        </div>
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="Fifth group">
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary y">y</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary z">z</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a1">1</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a2">2</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a3">3</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a4">4</button>
+        </div>
+        <div class="col-sm-3 tt btn-group mr-2" role="group" aria-label="Sixth group">
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a5">5</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a6">6</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a7">7</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a8">8</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a9">9</button>
+            <button style="color: black;" type="button" class="forthFifthSixth btn btn-secondary a0">0</button>
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+<footer id="footer" class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100009258792168">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/AkhilKrChoubey1?s=08">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="mailto:akhilchoubeys@gmail.com">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/akhil-choubey-376887192">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="https://www.instagram.com/ironakhil/">
+                    <i class="fab fa-instagram"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright : Akhil Choubey
+
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</html>
