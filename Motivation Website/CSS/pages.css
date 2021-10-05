@@ -1,0 +1,200 @@
+body {
+  background: linear-gradient(to bottom, #ffb99a 0%, #ff6464 100%);
+  margin: 0;
+}
+
+.name {
+  background: linear-gradient(to top, #db3056 0%, #851d41 100%);
+  border: 0;
+  color: #ff6699;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 23px;
+  margin: 0;
+  padding: 1px;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #660033;
+  text-align: center;
+}
+
+.bio {
+  background: linear-gradient(to top, #ffb99a -30%, #db3056 100%);
+  border: 0;
+  color: black;
+  font-family: 'Headland One', serif;
+  font-size: 20px;
+  line-height: 2;
+  margin: auto;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 6px 1px 9px #f08080;
+}
+
+.bio-img {
+  display: block;
+  float: left;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-left: 5%
+}
+
+.sbp {
+  background: linear-gradient(to bottom, #ffb99a 0%, #ff6464 100%);
+  border: 4px outset black;
+  border-radius: 15px 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  width: 80%;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #cd5c5c;
+  margin-left: 10%;
+}
+
+.quote1 {
+  left: 30px;
+  opacity: 0.4;
+  position: relative;
+}
+
+.quote2 {
+  bottom: 50px;
+  opacity: 0.4;
+  position: relative;
+  right: 95px;
+}
+
+.h2-index {
+  margin-bottom: 0;
+}
+
+.h3-index {
+  margin-top: 0;
+}
+
+.oimg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 3px solid black;
+}
+
+.oimgs {
+  text-align: center;
+}
+
+.credits {
+  background: transparent;
+  border: 0;
+  color: #4b0082;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding-left: 2%;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px none;
+}
+
+.footer {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to right, #ff00ff 0%, #000066 100%);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #e066ff;
+}
+
+.emusk {
+  padding-left: 20%;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: indianred;
+  border-width: 10px;
+  width: 9%;
+}
+
+h2 {
+  font-family: 'Headland One', serif;
+}
+
+
+
+/*****************MEDIA QUERIES******************/
+@media screen and (max-width:320px) {
+  .name {
+    width: 116%;
+  }
+
+  .bio {
+    width: 56.5%;
+    padding: 10% 30%;
+    margin: 0;
+  }
+
+  .bio-img {
+    width: 140%;
+  }
+
+  .bio-img {
+    display: block;
+    position: relative;
+    right: 35px;
+  }
+
+  .oimg {
+    display: block;
+    position: relative;
+    left: 35px;
+  }
+
+  .emusk {
+    display: block;
+    position: relative;
+    left: -59.5px;
+    width: 114%;
+  }
+
+  .sbp {
+    width: 76%;
+    text-align: left;
+    padding-left: 15%;
+    position: relative;
+    right: -8px;
+  }
+
+  hr {
+    width: 20%;
+    display: block;
+    position: relative;
+    right: -25px;
+  }
+
+  .footer {
+    font-size: 15px;
+    color: white;
+  }
+
+  .credits {
+    display: none;
+  }
+
+  .msd {
+    display: block;
+    position: relative;
+    width: 110%;
+    right: -10px;
+  }
+}

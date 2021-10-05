@@ -1,0 +1,289 @@
+body {
+  background: linear-gradient(to bottom, #e4f9ff 90%, #fa163f 100%);
+  margin: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  background: linear-gradient(to bottom, #12cad6 0%, #0fabbc 100%);
+  font-family: 'Merienda One', cursive;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 2% 25%;
+  text-align: center;
+}
+
+.form {
+  display: block;
+  text-align: center;
+  background: linear-gradient(to top, #0fabbc 0%, #e4f9ff 100%);
+  border: 0;
+  color: #000066;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  margin: 0;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #48d1cc;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.footer {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to bottom, #ff99cc -50%, #fa163f 100%);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: #3e206d;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #e066ff;
+}
+
+.h1-index {
+  margin: 15px;
+}
+
+.h2-index {
+  margin-bottom: 0;
+}
+
+.h3-index {
+  margin-top: 0;
+}
+
+.h4-index {
+  margin-top: 0;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: dodgerblue;
+  border-width: 10px;
+  width: 9%;
+}
+
+.t {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: dodgerblue;
+  border-width: 10px;
+  width: 9%;
+}
+
+li {
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 15%;
+}
+
+p {
+  margin: 0;
+}
+
+.slogan {
+  background: linear-gradient(to bottom, #0fabbc 0%, #e4f9ff 100%);
+  border: 0;
+  color: white;
+  display: inline-block;
+  font-family: 'Marko One', serif;
+  font-size: 23px;
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #000066;
+}
+
+.select {
+  background: linear-gradient(to bottom, #e4f9ff 0%, #0fabbc 100%);
+  border: 0;
+  color: #3e206d;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  margin: 0;
+  padding: 1px 1px 1px 35%;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #e066ff;
+}
+
+.title {
+  background: linear-gradient(to bottom, #3e206d 0%, #fa163f 100%);
+  border: 0;
+  color: #d89cf6;
+  font-family: 'Merienda One', cursive;
+  font-size: 23px;
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 6px 1px 9px #4b0082;
+}
+
+.quote1 {
+  left: 30px;
+  opacity: 0.6;
+  position: relative;
+}
+
+.quote2 {
+  bottom: 50px;
+  opacity: 0.6;
+  position: relative;
+  right: 95px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fa163f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #cc6699;
+  font-family: 'Merienda One', cursive;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #000099 0%, #0099ff 100%);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*****************MEDIA QUERIES******************/
+@media screen and (max-width:755px) {
+  .title {
+    width: 130%;
+  }
+
+  .description {
+    width: 70.5%;
+    padding: 10% 30%;
+    margin: 0;
+  }
+
+  .slogan {
+    width: 130%;
+    text-align: center;
+  }
+
+  .select {
+    width: 105%;
+    text-align: left;
+    padding-left: 25%;
+  }
+
+  .form {
+    width: 106%;
+    text-align: left;
+    padding-left: 25%;
+  }
+}
+
+@media screen and (max-width:565px) {
+  .title {
+    width: 150%;
+  }
+
+  .description {
+    width: 90.5%;
+    padding: 10% 30%;
+    margin: 0;
+  }
+
+  .slogan {
+    width: 150%;
+    text-align: center;
+  }
+
+  .select {
+    width: 125%;
+    text-align: left;
+    padding-left: 25%;
+  }
+
+  .form {
+    width: 135%;
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  hr {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .title {
+    width: 250%;
+  }
+
+  .description {
+    width: 190.5%;
+    padding: 10% 30%;
+    margin: 0;
+  }
+
+  .slogan {
+    width: 250%;
+    text-align: center;
+  }
+
+  .quote2 {
+    bottom: -8px;
+  }
+
+  .select {
+    width: 225%;
+    text-align: left;
+    padding-left: 25%;
+  }
+
+  .form {
+    width: 236%;
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  hr {
+    width: 20%;
+    display: block;
+    position: relative;
+    right: -200px;
+  }
+
+  .t {
+    width: 20%;
+    display: block;
+    position: relative;
+    right: -0px;
+  }
+}
