@@ -1,0 +1,156 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+body {
+  height: 100vh;
+}
+
+/* Navbar CSS start */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .navbar-container {
+  background-color: #ffffff;
+  /* background-color: rgb(74, 110, 224); */
+  width: 1000px;
+  padding: 1.4rem;
+  position: relative;
+  border-radius: 0.8rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav .navbar-container .navbar-text {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  color: rgba(74, 110, 224, 0.65);
+}
+/* Navbar CSS start */
+
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+.container *:not(i) {
+  font-family: "Rubik", sans-serif;
+}
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 20px;
+  border: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.buttons button {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: 2px solid #d5d5dc;
+  color: #d5d5dc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buttons button:hover {
+  background: #4a6ee0;
+  color: #fff;
+  border: 2px solid #4a6ee0;
+}
+.rotate-icon i {
+  transform: rotate(45deg);
+}
+.buttons .active {
+  border: none;
+  background-color: #4a6ee0;
+  color: #ffffff;
+}
+.output {
+  background-color: #f0f2fc;
+}
+#code {
+  width: 100%;
+  resize: none;
+  color: #30304a;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+/* BUTTONS */
+#submit {
+  display: block;
+  border: 1px solid #4a6ee0;
+  background: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 70px;
+  border-radius: 25px;
+  margin: 0 auto 30px auto;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+#submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  background: #4a6ee0;
+  z-index: -1;
+  transition: 0.8s;
+  border-radius: 0 0 50% 50%;
+}
+#submit:hover {
+  color: #4a6ee0;
+}
+#submit:hover::before {
+  height: 0%;
+}
+#copy {
+  font-size: 1rem;
+  background: #4a6ee0;
+  color: #fff;
+  border: 0.25rem solid #4a6ee0;
+  padding: 0.4em 1em;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  border-radius: 25px;
+  cursor: pointer;
+  left: 75%;
+}
