@@ -1,0 +1,195 @@
+@media (max-width: @screen-tablet) {
+  aside {
+    height: 100%;
+    ul {
+      padding: 0;
+      li {
+        border-bottom: 1px solid @gray;
+        display: block;
+        padding: 0;
+        a {
+          color: @header-links-vertical;
+          display: block;
+          padding: 15px 35px;
+          &:hover {
+            background: @aside-hover;
+          }
+        }
+      }
+    }
+  }
+  header {
+    height: @menu-mobile-height;
+    padding: 8px;
+    [src*="opensuse-logo.png"] {
+      height: 25px;
+    }
+    .logo {
+      padding-left: 0;
+    }
+  }
+  section:first-of-type {
+    padding-top: @menu-mobile-height;
+  }
+  #opensuse-os {
+    height: 960px;
+
+    .os-main {
+      margin-bottom: 0px;
+      .col-sm-6 {
+        padding: 30px;
+        &:first-of-type {
+          border-right: 0px solid transparent
+        }
+        &:last-of-type {
+          border-left: 0px solid transparent
+        }
+      }
+    }
+  }
+  #opensuse-tools {
+    h1 ~ h4 {
+      margin-bottom: 60px;
+    }
+    .tools-container {
+      margin-top: 10px;
+      .col-sm-4 {
+        padding: 0 20px;
+      }
+    }
+    [src*="laptop.jpg"] {
+      width: 80%;
+      margin-top: 3em;
+    }
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .btn-check-tools {
+    .text-center;
+    margin: 0;
+  }
+  .to-try-out-img {
+    .text-center;
+    padding-bottom: 2em;
+  }
+  .opensuse-news {
+    .owl-prev, .owl-next {
+      display: none;
+    }
+  }
+  #contribute-to-opensuse {
+    h4 {
+      padding: 0 15px;
+    }
+    .contribute-code,
+    .contribute-hardware {
+      height: 180px;
+      .bubble {
+        height: 180px;
+        width: 180px;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      i.fa-5x {
+        font-size: 3em;
+      }
+    }
+    #contribute-details {
+      .close-details {
+        font-size: 1.2em;
+      }
+      .contribution-extended-details {
+        padding: 10px 20px;
+        p {
+          font-size: .9em;
+        }
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+    .design-system {
+      h4 {
+        width: 100%;
+      }
+    }
+  }
+  .language-selector {
+    text-align: center !important;
+    padding-top: 1.7em;
+  }
+
+  .finger-detection-open-menu {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 100%;
+    z-index: 99999;
+  }
+
+  #opensuse-countdown .opensuse-countdown {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: center;
+
+    .opensuse-countdown__time-left {
+      margin-right: 5px;
+    }
+
+    .opensuse-countdown__call-to-action {
+      font-size: 16px;
+    }
+
+    .opensuse-countdown__alex img {
+      width: 85px;
+    }
+
+    .opensuse-countdown__days,
+    .opensuse-countdown__hours,
+    .opensuse-countdown__version-name,
+    .opensuse-countdown__number {
+      font-size: 45px;
+    }
+
+  }
+
+}
+@media (max-width: @screen-phone) {
+  #contribute-to-opensuse {
+    .contribute-code,
+    .contribute-hardware {
+      height: 140px;
+      .bubble {
+        height: 140px;
+        width: 140px;
+      }
+      h1 {
+        font-size: 1.7em;
+      }
+      h2 {
+        width: 140px;
+        font-size: 1.2em
+      }
+    }
+    #contribute-details {
+      .contribution-extended-details {
+        padding: 50px 20px;
+      }
+    }
+  }
+  #opensuse-tools .tools-container .media {
+    height: 165px;
+  }
+  .tools-container .col-md-6 {
+    padding: 0px;
+  }
+}

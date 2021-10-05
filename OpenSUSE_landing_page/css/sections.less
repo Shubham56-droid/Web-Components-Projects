@@ -1,0 +1,347 @@
+
+#opensuse-os {
+  background: @opensuse-os-background;
+  height: 720px;
+  overflow: hidden;
+  padding-bottom: 0;
+  position: relative;
+  transition: all .5s ease;
+  width: 100%;
+  h3 {
+    color: @opensuse-green;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+  h2 {
+    color: #fff;
+  }
+  h1 {
+    color: @opensuse-green;
+    font-weight: 300
+  }
+  h4 {
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 430px;
+  }
+  //temporal
+  .fa {
+    color: #fff;
+    font-size: 80px;
+  }
+  // fin temporal
+  .os-main {
+    margin-bottom: 80px;
+    .col-sm-6 {
+      height: 350px;
+      &:first-of-type {
+        border-right: 1px solid darken(@opensuse-blue, 8%);
+      }
+      &:last-of-type {
+        border-left: 1px solid lighten(@opensuse-blue, 8%);
+      }
+    }
+    #openSUSE, #tumbleweed {
+      cursor: pointer;
+      height: 350px;
+      padding: 50px;
+      transition: all ease .5s;
+      .moreinfo {
+        filter: alpha(opacity=40);
+        opacity: 0;
+        transition: all ease .5s;
+      }
+      &:hover {
+        margin-top: -1em;
+        .moreinfo {
+          filter: alpha(opacity=100);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  //fix for the particles
+  article, #more-information-os {
+    left: 0px;
+    padding-top: 145px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+   #more-information-os {
+    padding-top: 165px;
+    padding-left: 20%;
+    padding-right: 20%;
+    h1, p {
+      color: #fff;
+    }
+    p {
+      font-size: 1.3em
+    }
+  }
+}
+
+.hidden-content {
+  display: none;
+}
+
+#opensuse-tools {
+  background: #f6f6f6;
+  .tools-container {
+    margin-top: 70px;
+    .media {
+      height: 120px;
+      padding: 15px;
+      &:hover {
+        background: #ededed;
+      }
+    }
+  }
+  [src*="laptop.png"] {
+    height: 320px;
+    margin-top: 70px;
+  }
+  .tools-laptop {
+    padding-right: 0;
+  }
+
+}
+
+.gray-triangular-division {
+  background: url('../../assets/images/light-gray-triangle-for-division.png') center no-repeat;
+  height: 44px;
+  min-width: 140px;
+  width: 100%;
+}
+.blue-triangular-division {
+  background: url('../../assets/images/blue-triangle-for-division.png') center no-repeat;
+  height: 38px;
+  min-width: 134px;
+  width: 100%;
+}
+
+
+#contribute-to-opensuse {
+  background: url('../../assets/images/bg-contribution.svg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h2, h3, h4 {
+    color: #fff
+  }
+  .contribution-columns {
+    margin: 4em 0 4em;
+    .col-xs-6:first-of-type {
+      border-right: 1px solid @opensuse-blue;
+    }
+
+  }
+  #contribute-details {
+    display: none;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    transition: background 0.5s;
+    width: 100%;
+    z-index: 9999;
+    -webkit-transition: background 0.5s;
+    .close-details {
+      font-size: 1.5em;
+      font-weight: bold;
+      position: fixed;
+      right: 15px;
+      top: 15px;
+    }
+    .contribution-extended-details {
+      color: #fff;
+      padding: 90px 90px;
+      p {
+        font-size: 1.2em
+      }
+    }
+  }
+  .contribute-code,
+  .contribute-hardware {
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+    position: relative;
+    width: 100%;
+    i, h1, h2 {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      z-index: 200;
+    }
+    i {
+      -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+      transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    }
+    h1 {
+      display: block;
+      opacity: 1;
+      position: absolute;
+      text-align: center;
+      -webkit-transform: translate3d(0px,0px,0);
+      transform: translate3d(0px,0px,0);
+      -webkit-transition: -webkit-transform 0.2s, opacity 0.5s;
+      transition: transform 0.2s, opacity 0.5s;
+      width: 100%;
+    }
+    h2 {
+      bottom: 20px;
+      font-weight: 400;
+      font-style: italic;
+      margin-right: auto;
+      margin-left: auto;
+      opacity: 0;
+      -webkit-transform: translate3d(0px,10px,0);
+      transform: translate3d(0px,10px,0);
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+      width: 230px;
+    }
+    .text-holder {
+      position: absolute;
+      top: 25px;
+      width: 100%;
+    }
+    .bubble {
+      background: @opensuse-blue;
+      border-radius: 100%;
+      content: '';
+      height: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-transform: scale(0,0);
+      transform: scale(0,0);
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      width: 250px;
+      z-index: 0;
+    }
+    &:hover .bubble {
+      -webkit-transform: scale(1,1);
+      transform: scale(1,1);
+    }
+    &.active .bubble {
+      -webkit-transform: scale(1,1);
+      transform: scale(1,1);
+    }
+    &:hover, &.active {
+      cursor: pointer;
+      i, h1 {
+        color: #fff
+      }
+      i {
+        -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+        transform: perspective(1000px) rotate3d(0,1,0,360deg);
+      }
+      h1 {
+        opacity: 0;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
+      }
+      h2 {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+  .design-system {
+    h4 {
+      margin: auto;
+      margin-bottom: 3em;
+      width: 800px;
+    }
+  }
+}
+
+#contribute-to-opensuse.no-svg {
+  background: url('../../assets/images/bg-contribution.jpg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#opensuse-conferences {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  .section-background {
+    background: url('../../assets/images/opensuse-conference.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+
+    min-height: 300px;
+
+    transition: 1s filter ease;
+    -webkit-transition: 1s -webkit-filter ease;
+    -moz-transition: 1s -moz-filter ease;
+    -ms-transition: 1s -ms-filter ease;
+    -o-transition: 1s -o-filter ease;
+
+    width: 100%;
+  }
+  &:hover {
+    .section-background {
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%);
+    }
+    .btn-primary {
+      background: rgba(0, 0, 0, 0.4);
+      &:hover {
+        background: @opensuse-light-green;
+      }
+    }
+  }
+  .btn-primary {
+    transition: .5s background ease;
+  }
+  article {
+    position: absolute;
+    padding: 4em 0;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    h2 {
+      color: #fff;
+      padding-bottom: 1em
+    }
+  }
+}
+
+#opensuse-countdown {
+  background: #4bb679;
+  box-shadow:         inset 0px -5px 7px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px -5px 7px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: inset 0px -5px 7px 0px rgba(0, 0, 0, 0.25);
+  padding-top: .3em;
+  padding-bottom: 0em;
+
+  .opensuse-countdown {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer-links-area {
+  background: @opensuse-blue;
+}
+
+.footer-sponsors-area {
+  border-bottom: 1px solid @gray-lighter;
+  margin-bottom: 1em;
+}

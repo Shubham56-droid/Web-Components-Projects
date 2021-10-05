@@ -1,0 +1,42 @@
+.opensuse-news {
+  margin: 2em 0;
+  .owl-buttons {
+    width: 100%;
+    .owl-prev {
+      position: absolute;
+      top: 20px;
+    }
+    .owl-next {
+      position: absolute;
+      right: 0px;
+      top: 20px;
+    }
+    .owl-prev, .owl-next {
+      border: 1px solid @opensuse-blue;
+      border-radius: 100%;
+      color: @opensuse-blue;
+      font-family:'FontAwesome';
+      font-size: 1.2em;
+      height: 40px;
+      padding: 8px;
+      text-align: center;
+      width: 40px;
+    }
+  }
+
+  .owl-pagination {
+    margin-top: 2em;
+    text-align: center;
+    .owl-page {
+      background: @opensuse-blue;
+      border-radius: 100%;
+      display: inline-block;
+      margin: .3em;
+      height: 15px;
+      width: 15px;
+      &.active {
+        background: @opensuse-green;
+      }
+    }
+  }
+}

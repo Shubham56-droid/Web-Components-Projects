@@ -1,0 +1,127 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  background: @opensuse-light-green;
+  color: #fff;
+}
+::-moz-selection {
+  background: @opensuse-light-green;
+  color: #fff;
+}
+header {
+  background: @header;
+  display: block;
+  padding: 20px 0;
+  position: fixed;
+  transition: all .5s ease;
+  width: 100%;
+  z-index: 100;
+  #open_main_menu {
+    color: @button-main-menu;
+    cursor: pointer;
+    padding: 8px;
+  }
+  #opensuseLogo, ul li a {
+    transition: all .5s ease;
+  }
+  ul{
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 5px 0 0 0;
+      a {
+        color: @header-links-horizontal;
+        display: block;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-left: 18px;
+        text-transform: uppercase;
+        padding-bottom: 0.3em;
+        position: relative;
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          right: 50%;
+          bottom: 0;
+          background: @header-links-horizontal-hover;
+          opacity: 0;
+          height: 3px;
+          .prefixed(transition-property, "left, right");
+          .prefixed(transition-duration, .3s);
+          .prefixed(transition-timing-function, ease-out);
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          color: @header-links-horizontal-hover;
+          &:before {
+            left: 0;
+            right: 0;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.prefixed(@property, @value) {
+  -webkit-@{property}: @value;
+  -moz-@{property}: @value;
+  -ms-@{property}: @value;
+  -o-@{property}: @value;
+  @{property}: @value;
+}
+aside {
+  background: @aside;
+  left: -250px;
+  position: fixed;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: @menu-mobile-height;
+  z-index: 1000;
+  width: 250px;
+  text-transform: uppercase;
+
+  ul{
+    li{
+        a{
+            font-size: 14px;
+            font-weight: 400;
+        }
+      }
+    }
+}
+
+section{
+  padding: 50px 0;
+}
+
+footer {
+  border-bottom: 5px solid @opensuse-light-green;
+  .footer-links-area,
+  .footer-sponsors-area {
+    padding: 2em 0;
+  }
+  .footer-links-area {
+    .social-networks {
+      .text-right;
+      font-size: 2em;
+    }
+  }
+  a {
+    color: @opensuse-green;
+    &:hover {
+      color: @opensuse-light-green;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.btn-check-tools {
+  .text-right;
+  margin-right: 110px;
+  margin-top: 50px;
+}
+
+.btn-default {
+  border: 1px solid @opensuse-green;
+  background: transparent;
+  color: @opensuse-green;
+  &:hover {
+    background: @opensuse-light-green;
+    border: 1px solid @opensuse-light-green;
+    color: #fff;
+  }
+}
+#more-information-os .btn-default, #contribute-to-opensuse .btn-default {
+  border-color: #fff;
+  color: #fff;
+  &:hover {
+    background: @opensuse-blue;
+    border-color: @opensuse-blue;
+  }
+}
+
+.btn-primary {
+  border: 1px solid @opensuse-green;
+  background: @opensuse-green;
+  color: @opensuse-blue;
+  &:hover {
+    background: @opensuse-light-green;
+    border: 1px solid @opensuse-light-green;
+    color: #fff;
+  }
+}
+#more-information-os .btn-primary {
+  border-color: #fff;
+  background: #fff;
+  color: @gray;
+  &:hover {
+    background: @opensuse-blue;
+    border-color: @opensuse-blue;
+    color: #fff;
+    i.fa {
+      color: #fff
+    }
+  }
+}
+
+#more-information-os {
+  .btn {
+     i {
+      font-size: 1em;
+      margin-right: .6em;
+    }
+    &.btn-primary {
+      i {
+        color: @gray
+      }
+    }
+  }
+}
+
+#more-information-os .btn-link {
+  color: #fff;
+  margin-top: 5em;
+  &:hover, &:hover i {
+    color: @opensuse-blue
+  }
+}
+
+.btn.btn-default.dropdown-toggle {
+  border-color: @gray-light;
+  color: @gray-light;
+  &:hover {
+    background: @gray-lighter
+  }
+}
+
+.go-to-top {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  bottom: 15px;
+  color: #444;
+  display: none;
+  position: fixed;
+  padding: 5px 10px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.not-clickable {
+  pointer-events: none;
+  cursor: default;
+}
+
