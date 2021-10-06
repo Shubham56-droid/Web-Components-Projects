@@ -1,0 +1,76 @@
+
+body {
+  text-align: center;
+ /* background-color: #8cfaeb; */
+background: rgb(43,43,57);
+background: linear-gradient(180deg, rgba(43,43,57,1) 35%, rgba(145,165,170,1) 100%);
+}
+
+/* navbar section */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Yellowtail', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Ubuntu";
+}
+
+#footer {
+  margin-top: 5%;
+  bottom: 0; 
+  width: 100%;
+  background-color: #fff;
+}
+
+/* button-group */
+
+.tt{
+  padding-bottom: 10px;
+  height: 6.5rem;
+}
+
+.btgrp{
+   top: 45%;
+   left: 25%;
+   margin-top: 10%;
+   
+}
+.btn{
+  border: 10px solid #404B69;
+}
+.firstSecondThird{
+  background-image: url("piano-black.png");
+}
+
+.forthFifthSixth{
+  background-image: url("piano stroke.png");
+  color: black;
+}
+
+@media (max-width:480px){
+  .btgrp{
+  display: table-footer-group;
+   padding-left: 0;
+   margin-left: 0;
+   
+ }
+ .navbar-brand{
+   font-size: 18px;
+ }
+}
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
