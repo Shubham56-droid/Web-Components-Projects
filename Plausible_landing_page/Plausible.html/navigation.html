@@ -1,0 +1,282 @@
+<nav x-data="{mobileNav: false}" class="relative py-8 z-10">
+    <div class="container">
+      <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+        <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="/"><img class="h-8 w-auto sm:h-10 -mt-2" src="/assets/images/icon/plausible_logo.compressed.png" alt="Plausible logo" /></a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button @click="mobileNav = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div x-data="{open: false}" class="relative inline-block text-left">
+            <div>
+              <span @click="open = !open" class="cursor-pointer inline-flex justify-center font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+                Why Plausible
+                <svg class="-mr-1 h-5 w-5" style="transform: translateY(3px);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div x-show="open" @click.away="open = false" style="display: none;" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+              <div class="rounded-lg shadow-lg">
+                <div class="rounded-lg shadow-xs overflow-hidden">
+                  <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a href="/simple-web-analytics" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z" />
+                      </svg>
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Simple Metrics
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                        Get all the important stats on one single page. No training necessary.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="/lightweight-web-analytics" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M13 10V3L4 14H11L11 21L20 10L13 10Z">
+                      </svg>
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Lightweight Script
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                          Bloated analytics scripts can slow down your website. Plausible adds &lt;1KB page weight.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="/privacy-focused-web-analytics" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                      </svg>
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Privacy Focused
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                        Built with privacy of your visitors in mind. No need to annoy them with a cookie/GDPR consent banner.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="/open-source-website-analytics" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M10 20L14 4M18 8L22 12L18 16M6 16L2 12L6 8">
+                      </svg>
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Open Source
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                        Built openly on GitHub, released under the AGPL license and can be self-hosted too.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="px-5 py-5 bg-gray-50 space-y-5 sm:px-8 sm:py-8">
+                    <div class="flex justify-between">
+                      <div class="space-y-4">
+                        <h3 class="text-sm leading-5 tracking-wide font-medium text-gray-500 uppercase">
+                          Industry
+                        </h3>
+                        <ul class="space-y-4">
+                           <li class="text-base leading-6 truncate">
+                            <a href="/for-ecommerce-saas" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              For startups
+                            </a>
+                          </li>
+                          <li class="text-base leading-6 truncate">
+                            <a href="/for-freelancers-agencies" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              For freelancers
+                            </a>
+                          </li>
+                          <li class="text-base leading-6 truncate">
+                            <a href="/for-bloggers-creators" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              For bloggers
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+  
+                      <div class="space-y-4">
+                        <h3 class="text-sm leading-5 tracking-wide font-medium text-gray-500 uppercase">
+                          Comparisons
+                        </h3>
+                        <ul class="space-y-4">
+                          <li class="text-base leading-6 truncate">
+                            <a href="/vs-google-analytics" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              vs Google Analytics
+                            </a>
+                          </li>
+                          <li class="text-base leading-6 truncate">
+                            <a href="/vs-matomo" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              vs Matomo
+                            </a>
+                          </li>
+                          <li class="text-base leading-6 truncate">
+                            <a href="/vs-cloudflare-web-analytics" class="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                              vs Cloudflare
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div x-data="{open: false}" class="relative inline-block text-left ml-8">
+            <div>
+              <span @click="open = !open" class="cursor-pointer inline-flex justify-center font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+                Community
+                <svg class="-mr-1 h-5 w-5" style="transform: translateY(3px);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div x-show="open" @click.away="open = false" style="display: none;" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+              <div class="rounded-lg shadow-lg">
+                <div class="rounded-lg shadow-xs overflow-hidden">
+                  <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a href="/blog" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Blog
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                          Stories about privacy, web analytics, and building a financially sustainable open-source project.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="https://plausible.io/docs" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Documentation
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                          Everything you need to know about getting up and running with Plausible.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="https://github.com/plausible/analytics" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        GitHub Repo
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                          Read, inspect and review the source code behind our product to verify that our actions match with our words.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="https://plausible.io/roadmap" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Public Roadmap
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                        Follow the development and make suggestions for what features you would like to see in the future.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="https://plausible.io/forum" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                      <div class="space-y-1">
+                        <p class="text-base leading-6 font-medium text-gray-900">
+                        Forum
+                        </p>
+                        <p class="text-sm leading-5 text-gray-500">
+                        Community support for self-hosting Plausible users.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
+                    <h3 class="text-sm font-medium text-gray-600">
+                      Follow <a href="https://twitter.com/PlausibleHQ" class="text-blue-500">@PlausibleHQ</a> on Twitter for news and updates
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/#pricing" class="ml-8 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+        </div>
+        <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+          <ul class="flex" x-show="!document.cookie.includes('logged_in=true')">
+            <li>
+              <div class="inline-flex">
+                <a href="/login" class="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">Login</a>
+              </div>
+              <div class="hidden lg:inline-flex rounded shadow ml-6">
+                <a href="/register" class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">Start free trial</a>
+              </div>
+            </li>
+          </ul>
+          <div class="inline-flex rounded shadow ml-6" style="display: none;" x-show="document.cookie.includes('logged_in=true')">
+            <a href="/sites" class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">My dashboard</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div x-show="mobileNav" style="display: none;" class="absolute top-0 inset-x-0 p-2 md:hidden">
+      <div class="rounded-lg shadow-md transition transform origin-top-right" x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+        <div class="rounded-lg bg-white shadow-xs overflow-hidden">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="/assets/images/icon/plausible_logo.compressed.png" alt="" />
+            </div>
+            <div class="-mr-2">
+              <button @click="mobileNav = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3">
+            <span class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Why Plausible</span>
+            <a href="/simple-web-analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Simple metrics</a>
+            <a href="/lightweight-web-analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Lightweight script</a>
+            <a href="/data-policy" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- GDPR/CCPA Compliant</a>
+            <a href="/open-source-website-analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Open source</a>
+            <span class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Industry</span>
+            <a href="/for-ecommerce-saas" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- For startups</a>
+            <a href="/for-bloggers-creators" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- For bloggers</a>
+            <a href="/for-freelancers-agencies" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- For freelancers</a>
+            <span class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Comparisons</span>
+            <a href="/vs-google-analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Google Analytics alternative</a>
+            <a href="/vs-matomo" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Matomo alternative</a>
+            <a href="/vs-cloudflare-web-analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Cloudflare alternative</a>
+            <span class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Community</span>
+            <a href="/blog" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Blog</a>
+            <a href="https://docs.plausible.io" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Documentation</a>
+            <a href="https://github.com/plausible/analytics" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- GitHub Repo</a>
+            <a href="https://plausible.io/roadmap" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Public Roadmap</a>
+            <a href="https://plausible.io/forum" class="ml-2 mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">- Forum</a>
+            <a href="/#pricing" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Pricing</a>
+          </div>
+          <div x-show="!document.cookie.includes('logged_in=true')">
+            <a href="/register" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
+              Start free trial
+            </a>
+            <a href="/login" class="border-t border-gray-200 block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
+              Log in
+            </a>
+          </div>
+          <div style="display: none;" x-show="document.cookie.includes('logged_in=true')">
+            <a href="/sites" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
+              My dashboard
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
