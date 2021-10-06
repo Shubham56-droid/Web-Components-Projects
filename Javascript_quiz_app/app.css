@@ -1,0 +1,15 @@
+.vertical-center {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+#heading {
+  color: blue;
+  text-shadow: 3px 3px purple;
+  font-weight: bold;
+  font-size: 60px;
+}
