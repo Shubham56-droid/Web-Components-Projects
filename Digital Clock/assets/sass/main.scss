@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #ccc;
+
+  .container {
+    background-color: rgb(83, 80, 40);
+    max-width: 25rem;
+    width: 100%;
+    border: 1px solid #111;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.5);
+
+    .wrapper {
+      background-color: #111;
+      border-radius: 0.6rem;
+      padding: 0.6rem;
+
+      .clock-wrap {
+        background-color: #ccc;
+        border-radius: 0.3rem;
+        height: 9.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #day {
+          font-size: 2rem;
+        }
+
+        .clock {
+          font-size: 3rem;
+
+          #sec {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

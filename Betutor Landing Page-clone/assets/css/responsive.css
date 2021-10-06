@@ -1,0 +1,277 @@
+/* =====> { RESPONSIVE LAYOUT START HERE } <===== */
+@media (max-width: 1330px) {
+  .site-logo {
+    margin-left: 15px;
+  }
+
+  .slider-content {
+    margin-top: 70px;
+  }
+
+  .slider-box {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-box {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slider-title {
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .slider-text {
+    margin-bottom: 15px;
+  }
+
+  .slider-img {
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .subject-heading {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .subject-title {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .subject-grid {
+    margin-left: 15px;
+  }
+
+  .choose-box {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+
+  .choose-heading {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .course-title {
+    font-size: 40px;
+  }
+
+  .course-2-img-small {
+    max-width: 1125px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .feature-wrapper {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-link {
+    padding: 0 10px;
+  }
+
+  .footer-grid-item {
+    padding: 0 0 0 15px;
+  }
+
+  .footer-copyright {
+    margin: 0 15px;
+  }
+
+  .footer-number {
+    font-size: 22px;
+  }
+
+  .copyright-text {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 722px) {
+  .navbar {
+    display: none;
+  }
+
+  .slider-title {
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  .slider-text {
+    display: none;
+  }
+
+  .subject-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subject-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding: 0 85px;
+  }
+
+  .choose-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choose-box {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .choose-heading-text {
+    padding: 0 90px;
+  }
+
+  .choose-grid {
+    padding: 20px;
+  }
+
+  .course-2-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0px;
+    padding: 25px;
+    animation: none;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px 0;
+  }
+
+  .feature-grid-item {
+    animation: none;
+    text-align: center;
+    padding: 0 150px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px 0;
+    padding: 70px;
+  }
+
+  .footer-grid-item {
+    text-align: center;
+  }
+
+  .footer-social-box {
+    text-align: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-contact {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider-title {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .subject-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subject-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 0 85px;
+  }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem 0;
+  }
+
+  .feature-grid-item {
+    animation: none;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-header {
+    height: 700px;
+  }
+
+  .choose-heading-text {
+    display: none;
+  }
+
+  .footer-number {
+    font-size: 18px;
+  }
+
+  .footer-contact {
+    justify-content: space-between;
+  }
+
+  .footer-phone {
+    padding: 0;
+  }
+}
+
+/* =====> { RESPONSIVE LAYOUT ENDS HERE } <===== */
