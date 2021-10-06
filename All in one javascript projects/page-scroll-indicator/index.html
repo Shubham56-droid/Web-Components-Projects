@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            height: 100%;           
+        }
+        body {
+            background: #fff;   
+            position: relative;             
+        }
+
+        section {
+            padding-top: 5%;
+            min-height: 100%;
+            font-weight: 300;
+            color: #2a3039;
+            z-index: 1;
+            position: relative;
+        }
+        section h1 {
+            font-size: 35px;
+        }
+
+        #home, #contact {
+            background: #343c47;
+            color: #ffffff;
+        }
+        #skills {
+            background: #f5f8fb;    
+        }
+
+        .dotnav-right {
+            right: 10px;
+            top: 50%;
+            margin-top: -50px;
+            height: 100px;
+            z-index: 999;
+            position: fixed;
+        }
+
+        .dotnav {
+            padding: 0;
+            list-style: none;
+            font-size: 0.001px;
+        }
+
+        .dotnav > li {
+            display: inline-block;
+            font-size: 1rem;
+            vertical-align: top;
+        }
+        .dotnav > li:nth-child(n+2) {
+            margin-left: 15px;
+        }
+
+        .dotnav > li > a {
+            display: inline-block;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid #66ccff;
+            vertical-align: top;
+            overflow: hidden;
+            padding: 0;
+            text-indent: -999%;
+        }
+        .dotnav > li > a:hover,
+        .dotnav > li > a:focus {
+            background: #66ccff;
+            outline: none;
+        }
+        .dotnav > li > a:active {
+            background: #66ccff;
+        }
+        .dotnav > li.active > a {
+            background: #66ccff;
+        }
+        .dotnav-vertical > li {
+            display: block;
+            margin-right:10px;
+        }
+        .dotnav-vertical > li:nth-child(n+2) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        .awesome-tooltip + .tooltip > .tooltip-inner {
+            background-color: #66ccff; 
+            color: #fff; 
+            border: 1px solid #66ccff; 
+        }
+        .awesome-tooltip + .tooltip.left > .tooltip-arrow{
+            top:50%;
+            right:0;
+            margin-top:-5px;
+            border-top:5px solid transparent;
+            border-bottom:5px solid transparent;
+            border-left:5px solid #66ccff;
+        }
+    </style>
+</head>
+<body>
+    <nav id="mainnav" class="">
+        <ul class="dotnav dotnav-vertical dotnav-right nav">
+            <li class="awesome-tooltip" title="Home"><a href="#home"></a></li>
+            <li class="awesome-tooltip" title="About"><a href="#about"></a></li>
+            <li class="awesome-tooltip" title="Skills"><a href="#skills"></a></li>
+            <li class="awesome-tooltip" title="Projects"><a href="#projects"></a></li>
+            <li class="awesome-tooltip" title="Contact"><a href="#contact"></a></li>        
+        </ul>
+    </nav>     
+    <section id="home">                
+    </section>
+    <section id="about">                
+    </section>
+    <section id="skills">
+    </section>
+    <section id="projects">                
+    </section>
+    <section id="contact">    
+    </section> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+                $('.awesome-tooltip').tooltip({
+            placement: 'left'
+        });  
+        $('body').scrollspy({ 
+            target: '#mainnav', 
+            offset: 000
+        });  
+        /* CSS Tricks smooth scrolling : https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {                   
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                    return false;
+                }
+            }
+        });    
+
+    </script>
+</body>
+</html>

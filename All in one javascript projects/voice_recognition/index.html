@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice recognition</title>
+    <style>
+        body {
+            width: 100vw;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+            place-content: center;
+
+        }
+
+        li {
+            padding: 10px 20px;
+            max-width: 500px;
+            background-color: beige;
+            margin: 5px auto;
+            list-style: none;
+        }
+
+        button {
+            background-color: darkblue;
+            font-size: 20px;
+            padding: 10px 30px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        section {
+            height: 80vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 40vw;
+            min-width: 500px;
+            padding: 20px;
+            border: 2px solid darkblue;
+            margin: 10px;
+            border-radius: 20px;
+            /* box-shadow: 0 10px 10px -5px rgba(0,0,0,0.2); */
+            box-shadow: 0 8px 17px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 12%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <button class="talk">Talk</button>
+        <section>
+            <h3 class="content"></h3>
+        </section>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
