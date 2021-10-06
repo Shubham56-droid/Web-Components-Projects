@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.container{
+    background-color: #08090a;
+    text-decoration: none;
+    color: #f6f6f6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icons{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+
+    clip-path: circle(40px at);
+    /* clip-path: circle( 200px at center); */
+    
+    transition: all 200ms ease-in-out;
+}
+
+.icons.open{
+    clip-path: circle(180px); 
+}
+
+.FAB{
+    height: 70px;
+    width: 70px;
+    background-color: #0085ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 800;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.icon{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #ffbd00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #08090a;
+    font-size: 24px;
+    transition: all 300ms ease-in-out;
+}
+
+.icons.open .icon.call{
+    transform: translateX(-120px);
+}
+
+.icons.open .icon.mail{
+    transform: translateX(+120px);
+}
+
+.icons.open .icon.news{
+    transform: translateY(-120px);
+}
+
+.icons.open .icon.location{
+    transform: translateY(+120px);
+}
+
+.icons.open .icon.whatsapp{
+    transform: translateX(+84px)  translateY(+84px);
+}
+
+.icons.open .icon.insta{
+    transform: translateX(+84px)  translateY(-84px);
+}
+
+.icons.open .icon.linkedin{
+    transform: translateX(-84px)  translateY(+84px);
+}
+
+.icons.open .icon.youtube{
+    transform: translateX(-84px)  translateY(-84px);
+}

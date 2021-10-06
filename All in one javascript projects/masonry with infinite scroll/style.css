@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    background-color: #3498db;
+    padding: 5rem;
+    padding-bottom: 7rem;
+}
+
+.grid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: masonry;
+    grid-auto-flow: dense;
+    gap: 10px;
+    /* align-tracks: stretch,end; */
+}
+
+.card{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: white ;
+    padding: 10px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card-title{
+    font-size: 1.2rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+p{
+    font-size: 13px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.f{
+    grid-column: span 2;
+}
