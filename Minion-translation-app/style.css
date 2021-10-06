@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+:root {
+    --color-primary: #ffe33f;
+    --color-dark: #333333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "caveat", cursive;
+  color: var(--color-dark);
+}
+
+html {
+  background-image: url('5c1cc10652111-wallpaper-preview.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+nav h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main {
+  padding: 3rem 0;
+}
+
+main #input-textarea {
+  border: 2px solid var(--color-primary);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  outline: none;
+  resize: none;
+  width: 80%;
+  max-width: 30rem;
+  height: 7rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-family: "caveat", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn-translate {
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  font-size: 1em;
+  transition: all 0.4s ease-in-out;
+  font-family: "caveat", cursive;
+  font-weight: bold;
+}
+
+.btn-translate:hover {
+  background-color: #ffffff;
+  color: var(--color-dark);
+  border: 2px solid var(--color-primary);
+}
+
+.output-div {
+  border: 2px solid var(--color-primary);
+  background-color: #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 80%;
+  max-width: 30rem;
+  height: 7rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: var(--color-primary);
+  padding: 1rem 1rem;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+footer h2 {
+  font-weight: bold ;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+color: var(--color-primary);
+}
+
+a {
+  font-family: "caveat", cursive;
+  color: var(--color-dark);
+}
