@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The Author meta propagates the byline in a number of social networks -->
+<meta name="author" content="Open Source Politics" />
+
+<meta property="og:title"
+    content="
+      Open Source Politics
+    ">
+
+<meta property="og:description"
+    content="
+        Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne.
+      ">
+
+
+<meta property="og:url" content="http://opensourcepolitics.eu/" />
+
+
+    <meta property="og:site_name" content="Open Source Politics" />
+
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:site" content="@OpenSourcePol" />
+    <meta name="twitter:description" content="Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne." />
+
+
+
+  <!-- OG data for homepage -->
+  <meta property="og:image" content="/img/hero-osp+decidim.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Open Source Politics" />
+  <meta name="twitter:image" content="/img/hero-osp+decidim.png" />
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Open Source Politics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne.">
+    <link rel="canonical" href="http://opensourcepolitics.eu/">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style_custom.css">
+
+    <!-- Custom Fonts -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script async src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script async src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.osp.cat/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '22']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.osp.cat/piwik.php?idsite=22&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+    
+    <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2029777920577803');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2029777920577803&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="page-scroll" href="#page-top"><img src="/img/logos/logo-osp.svg" width="60px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+          <li>
+            <a class="page-scroll menu-item" href="#references" style = "margin-left:4px;">Réalisations</a>
+          </li>
+          <li>
+            <a class="page-scroll menu-item" href="#decidim" style = "margin-left:4px;">Decidim</a>
+          </li>
+          <li>
+            
+            <a class="page-scroll menu-item" href="https://medium.com/open-source-politics" style = "margin-left:4px;">Articles</a>
+            
+          </li>
+          <li>
+            <a class="page-scroll menu-item" href="#contact" style = "margin-left:4px;">Contact</a>
+          </li>
+          
+          <li>
+            <a class="page-scroll menu-item" href="#jobs" style = "margin-left:4px;">On recrute !</a>
+          </li>
+          
+        </ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="/fr/accueil"><span style="font-size:1.5em;color:#FDC63D">fr</span> </a></li>
+  <li><a href="/en/home"><span style="font-size:1em">en</span> </a></li>
+  
+  <li><a href="newsletter"><i class="fa fa-envelope"></i></a>
+  </li>
+  
+  <li><a href="http://twitter.com/opensourcepol"><i class="fa fa-twitter"></i></a>
+  </li>
+  
+  <li><a href="https://www.facebook.com/OpenSourcePolitics/"><i class="fa fa-facebook"></i></a>
+  </li>
+  
+  <li><a href="https://github.com/OpenSourcePolitics"><i class="fa fa-github"></i></a>
+  </li>
+  
+  <li><a href="https://medium.com/open-source-politics"><i class="fa fa-medium"></i></a>
+  </li>
+  
+  <li><a href="https://meetup.com/fr-FR/Open-Source-Politics/"><i class="fa fa-meetup"></i></a>
+  </li>
+  
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="row" style="padding-top:10%; padding-bottom: 10%;">
+      <div class="col-lg-6">
+        <div class="intro-text">
+            <div class="intro-heading-min">Faire de la démocratie <br> une <u>démarche permanente</u> avec le numérique</div>
+            <div class="intro-lead-in">Open Source Politics, Solutions Civic Tech : plateformes de démocratie participative <br> pour institutions et organisations.</div>
+            <p><a href="#contact" class="page-scroll btn-lg btn-primary" style="font-size: 17px;">Demandez une démo</a></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="/img/platform.png" style="margin-top:10%">
+          <p style="color:#000; text-align: right;"><a href="#decidim" class="page-scroll">En savoir plus sur Decidim&nbsp;<i class="fa fa-arrow-down" style="color:#0A529E;"></i></a></p>
+
+      </div>
+    </div>
+
+</div>
+
+
+</header>
+
+  <section id="references" class="bg-light-gray">
+    <div class="container-fluid">
+        <h2 class="section-heading" style="text-align:center;">Nos réalisations</h2>
+        <p style="text-align:center;">Plus d'une trentaine d'organisations nous font confiance</p>
+        <div class="row">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="https://consultation.democratie-numerique.assemblee-nationale.fr">
+                        <img data-src="/img/clients/assemblee-nationale.png" alt="logo Assemblée Nationale"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="https://consultation.democratie-numerique.assemblee-nationale.fr"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="https://participons.debatpublic.fr/">
+                        <img data-src="/img/clients/CNDP.png" alt="logo CNDP"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="https://participons.debatpublic.fr/"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="http://ecrivons.angers.fr/">
+                        <img data-src="/img/clients/angers.png" alt="logo Ville d'Angers"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="http://ecrivons.angers.fr/"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;budget participatif</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="https://democracyos.consultation.etalab.gouv.fr/">
+                        <img data-src="/img/clients/etalab.png" alt="logo Etalab"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="https://democracyos.consultation.etalab.gouv.fr/"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="https://participation.lillemetropole.fr/">
+                        <img data-src="/img/clients/mel.png" alt="logo Métropole Européenne de Lille"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="https://participation.lillemetropole.fr/"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center><a href="http://arcinnovation.fr">
+                        <img data-src="/img/clients/paris.png" alt="logo Ville de Paris"
+                             style="min-width=208px;" class="lazy img-responsive"></a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6><a href="http://arcinnovation.fr"></h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;appel à projets</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <div class="row">
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://budget-participatif.rivp.fr/">
+                            <img data-src="/img/clients/logo-rivp.png" alt="logo RIVP"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://budget-participatif.rivp.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Budget Participatif</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://participez.nancy.fr/">
+                            <img data-src="/img/clients/nancy.png" alt="logo Ville de Nancy"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://participez.nancy.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://concertations.nouvelle-aquitaine.fr/">
+                            <img data-src="/img/clients/nouvelle-aquitaine.png" alt="logo Nouvelle Aquitaine"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://concertations.nouvelle-aquitaine.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://participer.loire-atlantique.fr/">
+                            <img data-src="/img/clients/loire-atlantique.png" alt="logo Conseil départemental de Loire Atlantique"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://participer.loire-atlantique.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://atelierdevosidees.loiret.fr/">
+                            <img data-src="/img/clients/loiret.png" alt="logo Conseil Départemental du Loiret"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://atelierdevosidees.loiret.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;budget participatif</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://participez.nanterre.fr/">
+                            <img data-src="/img/clients/nanterre.png" alt="logo Mairie de Nanterre"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://participez.nanterre.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+        </div>
+        <div class="row">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://monopinion.belgium.be/">
+                            <img data-src="/img/clients/bosa.png" alt="bosa"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://monopinion.belgium.be/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://uccle.monopinion.belgium.be/">
+                            <img data-src="/img/clients/uccle.png" alt="logo uccle"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://uccle.monopinion.belgium.be/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://nivelles.monopinion.belgium.be/">
+                            <img data-src="/img/clients/nivelles.png" alt="logo Nivelles"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://nivelles.monopinion.belgium.be/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://www.budget-participatif-romainville.fr/">
+                            <img data-src="/img/clients/romainville.png" alt="logo Romainville"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://www.budget-participatif-romainville.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Budget participatif</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://budgetparticipatif.elogie-siemp.paris/">
+                            <img data-src="/img/clients/elogie-siemp.png" alt="logo Elogie SIEMP"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://budgetparticipatif.elogie-siemp.paris/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Budget Participatif</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://waterloo.monopinion.belgium.be/">
+                            <img data-src="/img/clients/waterloo.png" alt="logo waterloo"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://waterloo.monopinion.belgium.be/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <div class="row">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://rentree2019.mairie-orsay.fr/">
+                            <img data-src="/img/clients/orsay.png" alt="logo Orsay"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://rentree2019.mairie-orsay.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Votation citoyenne</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="">
+                            <img data-src="/img/clients/e-vendee.png" alt="logo Syndicat mixte e-Collectivités Vendée"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href=""></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="">
+                            <img data-src="/img/clients/entrouvert.png" alt="logo Entrouvert"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href=""></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Club utilisateur</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://budgetparticipatif.ville-roubaix.fr/">
+                            <img data-src="/img/clients/roubaix.png" alt="logo roubaix"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://budgetparticipatif.ville-roubaix.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Budget participatif</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://budgetparticipatif.saintjeandebraye.fr/">
+                            <img data-src="/img/clients/saint-jean-braye.png" alt="logo Saint-Jean de Braye"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://budgetparticipatif.saintjeandebraye.fr/"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Budget participatif</span></p>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-2">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="https://partitipez.villeurbanne.fr">
+                            <img data-src="/img/clients/villeurbanne.png" alt="logo Villeurbanne"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href="https://partitipez.villeurbanne.fr"></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Consultation publique</span></p>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top:2em;">
+        <h2 class="section-heading" style="text-align:center;">Nos cas d'usage</h2>
+        <p style="text-align:center;"></p>
+        
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <div style="padding:20px; background-color:#fff;" class="radius-up">
+                    <center>
+                        <a href="/bp-angers">
+                            <img data-src="/img/uses_cases/bp-angers-169.png" alt="Le budget participatif de la ville d'Angers"
+                                 style="min-width=208px;" class="lazy img-responsive">
+                        </a>
+                    </center>
+                </div>
+                <div class="portfolio-block radius-down">
+                    <h6>
+                        <a href=""></a>
+                    </h6>
+                    
+                    <p><span style:"color:grey;"><i class="fa fa-tag"></i>&nbsp;&nbsp;Étude de cas du budget participatif 2018 de la ville d'Angers</span></p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <center>
+            <a href="/#contact"
+               class="page-scroll btn btn-lg btn-primary">Contactez-nous
+            </a>
+        </center>
+    </div>
+
+</section>
+
+  
+<section id="decidim">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img class="lazy" data-src="https://d33wubrfki0l68.cloudfront.net/c8a989ae15c4def77353ab677084cf68e6a9c754/d6de4/images/decidim-logo.svg" style="max-width:400px";>
+        <h3><span style="color:#ED6064;">Decidim</span>, UNE PLATEFORME DE PARTICIPATION ET GOUVERNANCE DÉMOCRATIQUE COMPLÈTE</h3>
+        <br>
+        <p><a href="#contact" class="page-scroll btn btn-primary">Demandez une démo</a></p>
+      </div>
+      <div class="col-lg-6 col-md-6 iframe-container">
+         <iframe width="510" height="290" src="https://www.youtube.com/embed/KTAZCCrgYmM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <br>
+  <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <h4>LES 10 ATOUTS DE DECIDIM</h4>
+        <ul class="fa-ul" >
+          <li>
+            <span style="color:#ED6064";><i class="fa-li fa fa-check"></i></span><b>Personnalisable et modulaire</b> pour s'adapter à votre contexte.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span><b>Parcours participatif transparent</b> du dépôt d’une idée à sa réalisation.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Nombreuses fonctionnalités pour animer vos <b>budgets participatifs, consultation publiques</b> etc.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Démarches gérées par les administrateurs et parfois lancées <b>à l'initiative des participants (pétitions)</b>.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span><b>Espaces privés</b> pour une gouvernance à plusieurs échelles.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span><b>Dimension sociale</b> renforcée avec des notifications personnalisées, des profils auxquels s'abonner et une messagerie privée entre utilisateurs.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span><b>Panel d'administration</b> avancé qui vous aide à organiser votre travail et gestion fine des <b>droits d'administration</b>.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Plateforme <b>responsive pour un affichage adapté à tous les écrans</b>.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Disponible en <b>SAAS</b>. Hébergement sécurisé en France, données sécurisées.
+          </li>
+          <li style="margin-top:10px;">
+            <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Véritablement <a href="https://medium.com/open-source-politics/pourquoi-et-comment-nous-choisissons-de-construire-un-mod%C3%A8le-%C3%A9conomique-fond%C3%A9-sur-des-biens-communs-6c4f3ec3c075"><b>open source</b></a>, conforme au <b>RGPD</b> et doté d'une API complète pour l'<b>open data</b>.
+          </li>
+        </ul>
+      </div>
+        <div class="col-lg-6 col-md-6">
+          <h4>OSP vous accompagne à chaque étape</h4>
+          <ul class="fa-ul" >
+            <li>
+              <span style="color:#ED6064";><i class="fa-li fa fa-check"></i></span>Formations aux <b>enjeux de la démocratie participative numérique</b>.
+            </li>
+            <li style="margin-top:10px;">
+              <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Conseil stratégique sur la <b>création de vos contenus</b> et la <b>mobilisation citoyenne</b>.
+            </li>
+            <li style="margin-top:10px;">
+              <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Suivi et gestion de votre projet de <b>A à Z</b>.
+            </li>
+            <li style="margin-top:10px;">
+              <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Animation d'ateliers d'<b>intelligence collective</b>.
+            </li>
+            <li style="margin-top:10px;">
+              <span style="color:#ED6064;"><i class="fa-li fa fa-check"></i></span>Production de <b>synthèses qualitatives</b> avec des outils de <b>traitement automatique de la langue</b>.
+            </li>
+          </ul>
+          <br>
+          <p><a href="#contact" class="page-scroll btn btn-primary">Contactez-nous</a></p>
+        </div>
+      </div>
+  </div>
+</section>
+
+      <section class="bg-light-gray">
+        <div class="container" id="team">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Notre équipe</h2>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div class="row">
+              
+              
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img data-src="/img/team/alain.jpg" class="lazy img-responsive img-circle headshot" width="205" height="205" alt="Alain Buchotte">
+                        <h4>Alain Buchotte</h4>
+                        
+                        <p>Technique</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:alain@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/moustachu">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/moustachu/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+              </div>
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img data-src="/img/team/olivier.jpg" class="lazy img-responsive img-circle headshot" width="205" height="205" alt="Olivier Buchotte">
+                        <h4>Olivier Buchotte</h4>
+                        
+                        <p>Finances</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:olivier@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/olivier-buchotte-70a468104/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+              </div>
+            
+            
+              
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img data-src="/img/team/valentin.jpg" class="lazy img-responsive img-circle headshot" width="205" height="205" alt="Valentin Chaput">
+                        <h4>Valentin Chaput</h4>
+                        
+                        <p>Conseil</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:valentin@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://twitter.com/valentinchaput">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://medium.com/@ValentinChaput">
+                                    <i class="fa fa-medium"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/valentinchaput">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+              </div>
+            
+            
+              
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img data-src="/img/team/virgile.png" class="lazy img-responsive img-circle headshot" width="205" height="205" alt="Virgile Deville">
+                        <h4>Virgile Deville</h4>
+                        
+                        <p>Produit & Projets</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:virgile@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://twitter.com/virgiledeville">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/virgiledeville">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/virgile-dev">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+              </div>
+            
+            
+              
+            
+            
+              
+            
+            
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div class="row">
+              
+              
+            
+            
+              
+                    <div class="team-member col-sm-3">
+                        <img data-src="/img/team/antoine.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Antoine Gaboriau">
+                        <h4>Antoine Gaboriau</h4>
+                        
+                        <p>Sciences Sociales</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:antoine@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/antoine-gaboriau-871a1561/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+            
+            
+              
+            
+            
+              
+            
+            
+              
+                    <div class="team-member col-sm-3">
+                        <img data-src="/img/team/lucas.jpeg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Lucas Hamani">
+                        <h4>Lucas Hamani</h4>
+                        
+                        <p>Produit</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:lucas.hamani@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/lu-hamani">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://fr.linkedin.com/in/lucas-hamani">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+            
+            
+              
+            
+            
+              
+                    <div class="team-member col-sm-3">
+                        <img data-src="/img/team/mathilde.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Mathilde Jeuland">
+                        <h4>Mathilde Jeuland</h4>
+                        
+                        <p>Traitement automatique de la langue</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:mathilde@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/mathilde-jeuland-055a8313b/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+            
+            
+              
+                    <div class="team-member col-sm-3">
+                        <img data-src="/img/team/leo.png" class="lazy img-responsive img-circle headshot" width="205.2" alt="Léo Cochin">
+                        <h4>Léo Cochin</h4>
+                        
+                        <p>Commercial</p>
+                        
+                        <ul class="list-inline social-buttons">
+                            
+                            <li>
+                                <a href="mailto:leo@opensourcepolitics.eu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/leocochin/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+            
+            
+        </div>
+        <div class="row">
+          
+          
+        
+        
+          
+        
+        
+          
+                <div class="team-member col-sm-3">
+                    <img data-src="/img/team/harry.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Harry Gueguen">
+                    <h4>Harry Gueguen</h4>
+                    
+                    <p>Développement</p>
+                    
+                    <ul class="list-inline social-buttons">
+                        
+                        <li>
+                            <a href="https://github.com/hgueguen">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/harry-gueguen-b056b4112/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+        
+          
+                <div class="team-member col-sm-3">
+                    <img data-src="/img/team/hugo.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Hugo Barthelemy">
+                    <h4>Hugo Barthelemy</h4>
+                    
+                    <p>Développement</p>
+                    
+                    <ul class="list-inline social-buttons">
+                        
+                        <li>
+                            <a href="https://github.com/hugobarthelemy">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/hugobarthelemy/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+        
+          
+        
+        
+          
+                <div class="team-member col-sm-3">
+                    <img data-src="/img/team/ludivine.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="Ludivine Coipel">
+                    <h4>Ludivine Coipel</h4>
+                    
+                    <p>Développement</p>
+                    
+                    <ul class="list-inline social-buttons">
+                        
+                        <li>
+                            <a href="https://github.com/ludivinecp">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/ludivine-coipel-83a46299/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+        
+          
+        
+        
+          
+        
+        
+          
+        
+        
+          
+        
+        
+          
+                <div class="team-member col-sm-3">
+                    <img data-src="/img/team/armand.png" class="lazy img-responsive img-circle headshot" width="205.2" alt="Armand Fardeau">
+                    <h4>Armand Fardeau</h4>
+                    
+                    <p>Développement</p>
+                    
+                    <ul class="list-inline social-buttons">
+                        
+                        <li>
+                            <a href="https://github.com/armandfardeau">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/armandfardeau/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+        
+          
+        
+        
+    </div>
+    <div class="row">
+      <div class="team-member">
+        <center>
+          <img data-src="/img/team/claire.jpg" class="lazy img-responsive img-circle headshot" width="205.2" alt="">
+          <h4>Claire Zuliani</h4>
+          
+          <p>Développement</p>
+          
+          <ul class="list-inline social-buttons">
+              <li>
+                  <a href="https://github.com/clairezed">
+                      <i class="fa fa-github"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.linkedin.com/in/czuliani/">
+                      <i class="fa fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" class="container" id="jobs">
+    <div class="col-lg-12 text-center">
+      <br>
+        <h2 class="section-heading">Rejoignez-nous, OSP recrute !</h2>
+        <br>
+    </div>
+  </div>
+  <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div style="margin-top:10px;padding: 30px; border-radius:6px; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/background-articles.png);">
+        <div>
+          <center>
+            <h4><a href="mailto:contact@opensourcepolitics.eu" target="blank"><span style="color:#fff"><i class="fa fa-2x fa-"></i>&nbsp;&nbsp;Consultant Junior</span></a></h4>
+            <p><span style="color:#fff">Stage 6 mois</span></p>
+            <p><span style="color:#fff"><i class="fa fa-calendar-o" aria-hidden="true">&nbsp;-&nbsp;</i>Flexible</span></p>
+            <p><a href="mailto:contact@opensourcepolitics.eu" class="btn btn-primary">Candidater</a></p>
+          </center>
+        </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div style="margin-top:10px;padding: 30px; border-radius:6px; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/background-articles.png);">
+        <div>
+          <center>
+            <h4><a href="mailto:contact@opensourcepolitics.eu" target="blank"><span style="color:#fff"><i class="fa fa-2x fa-"></i>&nbsp;&nbsp;Développeur junior</span></a></h4>
+            <p><span style="color:#fff">Stage 6 mois</span></p>
+            <p><span style="color:#fff"><i class="fa fa-calendar-o" aria-hidden="true">&nbsp;-&nbsp;</i>Flexible</span></p>
+            <p><a href="mailto:contact@opensourcepolitics.eu" class="btn btn-primary">Candidater</a></p>
+          </center>
+        </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+  <section id="about" style = "padding-top:100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <h2 class="section-heading">À propos</h2>
+          <div class="section-subheading sub-heading-margin" style = "font-size:19px;">Open Source Politics défend une certaine vision de la démocratie participative numérique. <br> Découvrez la au travers des trois articles suivants :</div>
+      </div>
+    </div>
+    <div class="row">
+      <p>&nbsp;</p>
+      
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div style="margin-top:10px; padding: 30px; border-radius:6px; background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/img/background-articles.png);">
+          <div>
+            <h3><a href="https://medium.com/open-source-politics/notre-histoire-c61bbec90334" target="_blank"><span style="color:#fff">Notre histoire</span></a></h3>
+            <p style="color:#fff;">Le 21 septembre 2016<br>par<a href="https://medium.com/@ValentinChaput">&nbsp;<span style="color:#fff;text-decoration: underline;">Valentin Chaput</span></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div style="margin-top:10px;padding: 30px; border-radius:6px; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/background-articles.png);">
+          <div>
+            <h3><a href="https://medium.com/open-source-politics/la-civic-tech-fran%C3%A7aise-risque-de-se-d%C3%A9tourner-de-la-cr%C3%A9ation-des-biens-communs-num%C3%A9riques-dont-9ebcf5c55c2e" target="_blank"><span style="color:#fff">Open By Design</span></a></h3>
+            <p style="color:#fff;">Le 6 décembre 2016 <br>par <a href="https://medium.com/@ValentinChaput">&nbsp;<span style="color:#fff;text-decoration: underline;">Valentin Chaput</span></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div style="margin-top:10px; padding: 30px; border-radius:6px; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/background-articles.png);">
+          <div>
+            <h3><a href="https://medium.com/open-source-politics/pourquoi-et-comment-nous-choisissons-de-construire-un-mod%C3%A8le-%C3%A9conomique-fond%C3%A9-sur-des-biens-communs-6c4f3ec3c075" target="_blank"><span style="color:#fff">Code commun</span></a></h3>
+            <p style="color:#fff;">Le 5 mars 2018 <br>par <a href="https://medium.com/@ValentinChaput">&nbsp;<span style="color:#fff;text-decoration: underline;">Valentin Chaput</span></a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <p>&nbsp;</p>
+              <center><a href="https://medium.com/open-source-politics" class="btn btn-secondary">Tous nos articles</a></center>
+</section>
+
+  <section id="contact">
+        <div class="container">
+            <div class="row">
+                  <center>
+                  <form  action="https://formcarry.com/s/deKgMWnvB2P" method="POST" accept-charset="UTF-8" >
+                    <div class="col-lg-12">
+                      <center><h2 class="section-heading">Contactez-nous !</h2></center>
+                        <div class="control-group form-group">
+                            <input type="text" class="form-control" placeholder="Votre nom *" name="name" required data-validation-required-message="Merci d'entrer votre nom.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group form-group">
+                            <input type="email" class="form-control" placeholder="Votre email *" name="email" required data-validation-required-message=".">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group form-group">
+                            <input type="tel" class="form-control" placeholder="Votre n° téléphone *" name="phone" required data-validation-required-message="Merci d'entrer votre numéro de téléphone.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group form-group">
+                            <textarea class="form-control" placeholder="Votre message *" name="message" required data-validation-required-message="Merci d'entrer votre message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <input type="submit" value="Envoyer" class="btn btn-xl">
+                        </div>
+                      </div>
+                    </form>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer style="background-color:#000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- <ul class="list-inline clearfix">
+          
+          <li><b class="menu-item" style="color:#fff;">Offres :</b></li>
+          
+          
+          <li><a href="/consultations-publiques" class="menu-item" style="color:#fff;">OSP Agora</a></li>
+          
+          
+          <li><a href="/budget-participatif" class="menu-item" style="color:#fff;">OSP Budget</a></li>
+            
+            
+            <li><a href="/custom" class="menu-item" style="color:#fff;">OSP Custom</a></li>
+            
+            
+            <li><a href="/formation-civic-tech" class="menu-item" style="color:#fff;">OSP Formation</a></li>
+            
+          </ul> -->
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline clearfix">
+            
+            <li><a href="/fr/Mentions-Legales" class="menu-item" style="color:#fff;">Mentions légales</a></li>
+            
+            
+            <li><a href="/fr/Credits" class="menu-item" style="color:#fff;">Crédits</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div style ="font-size:1em;color:#fff;">
+            <center><img src="/img/logos/logo-osp.svg" width="80px" style="margin-top:-70px;" class="hidden-xs"></center>
+            <br>
+            <p>Open Source Politics,<br>
+              RCS Paris 820 412 161<br>
+              32 rue des Cascades<br>
+              75020 Paris (France)</p>
+            </div>
+          </div>
+          <div class="col-md-4" style = "padding-right:20px;color:#fff;">
+            <p>Open Source Politics est une SARL relevant du champ de l'économie sociale et solidaire. Elle défend les principes de l'open source dans les outils de <b>participation citoyenne</b> qu'elle déploie, ainsi que dans les relations avec ses partenaires.</p>
+          </div>
+          <div class="col-md-4" style = "padding-right:20px;color:#fff;">
+            <br>
+            <p>contact@opensourcepolitics.eu<br>
+              <!--{ site.data.i18n[page.locale].footer.right-bottom }}<br>-->
+            </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" id="cookiebanner" src="http://cookiebanner.eu/js/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#000" data-link="#dddddd"
+  data-moreinfo="http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/que-dit-la-loi/"
+  data-message="Les cookies assurent le bon fonctionnement de notre site Internet en retenant vos préférences. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"></script>
+
+   <!-- Portfolio Modals -->
+ 
+
+  <!-- jQuery Version 1.11.0 -->
+<script defer src="/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script defer src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script defer src="/js/jquery.easing.min.js"></script>
+<script defer src="/js/classie.js"></script>
+<script defer src="/js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script defer src="/js/jqBootstrapValidation.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script defer src="/js/agency.js"></script>
+
+<script defer src="/js/drift.js"></script>
+
+<script defer src="/js/google_analytics.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.2/lazyload.min.js"></script>
+
+<script defer src="/js/lazyload.js"></script>
+
+
+</body>
+</html>
