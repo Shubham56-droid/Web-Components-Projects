@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  margin:0;
+}
+
+
+.threeholder {
+  position: relative;
+  margin-top: 0px;
+  width: 800px;
+  height:280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.threeone {
+  display: inline-block;
+  width: 33.33333333333%;
+  height: 100%;
+  background: #363636;
+  border-bottom: 15px solid #f5cb22;
+  text-align: center;
+  transition: all 0.25s;
+}
+.threetwo {
+  display: inline-block;
+  width: 33.333333333%;
+  height: 100%;
+  background: #333333;
+  border-bottom: 15px solid #f5cb22;
+  transition: all 0.25s;
+}
+.threethree {
+  display: inline-block;
+  width: 33.333333333%;
+  height: 100%;
+  background: #363636;
+  border-bottom: 15px solid #f5cb22;
+  transition: all 0.25s;
+}
+.threeone:hover {
+  background: #f5cb22;
+}
+.threeone:hover .circlepic {
+  background: #5c5c5c;
+}
+.threeone:hover .circleborder{
+    background: #333333;
+}
+.threeone:hover svg{
+  fill:#f5cb22;
+}
+.threeholder h4 {
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+  margin-left: -55px;
+  font-weight: bold;
+  margin-top: 45px;
+  text-align: center;
+  color: white;
+}
+.threeholder p {
+  display: inline-block;
+  width:200px;
+  text-align: center;
+  margin-left: -55px;
+  margin-top: 20px;
+  font-size: 12px;
+  color:#8a8a8a;
+  letter-spacing: 1px;
+}
+.threeone:hover h4 {
+  color: black;
+}
+.threetwo:hover h4 {
+  color: black;
+}
+.threethree:hover h4 {
+  color: black;
+}
+.threeone:hover svg, .threetwo:hover svg, .threethree:hover svg {
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+.threetwo:hover {
+  background: #f5cb22;
+}
+.threetwo:hover .circleborder{
+    background: #333333;
+}
+.threetwo:hover svg{
+  fill:#f5cb22;
+}
+.threethree:hover {
+  background: #f5cb22;
+}
+.threethree:hover .circleborder{
+    background: #333333;
+}
+.threethree:hover svg{
+  fill:#f5cb22;
+}
+.circleborder {
+  position: absolute;
+  top: 30px;
+  width: 90px;
+  height: 90px;
+  background: #f5cb22;
+  margin-left: 88.33333px;
+  border-radius: 50%;
+}
+.circlepic {
+  position:absolute;
+  top:-10px;
+  margin-top: 30px;
+  width: 110px;
+  height: 110px;
+  background: #5c5c5c;
+  margin-left: 78.33333px;
+  border-radius: 50%;
+}
