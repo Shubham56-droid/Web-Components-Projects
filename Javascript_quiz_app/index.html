@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div style="background :url(bg_image.jpg); opacity: 0.5;">
+      <h1 class="text-center p-5" id="heading">Quizzing Application</h1>
+    </div>
+    <div class="container vertical-center" id="quesPanel">
+      <div class="p-5 shadow-lg">
+        <h5 id="ques"></h5>
+        <div class="ps-4 pt-2">
+          
+          <input type="radio" id="option1"/>
+          <span id="option1Text"></span>
+          <br />
+          <input type="radio" id="option2" />
+          <span id="option2Text"></span>
+          <br />
+          <input type="radio" id="option3" />
+          <span id="option3Text"></span>
+          <br />
+          <input type="radio" id="option4" />
+          <span id="option4Text"></span>
+        </div>
+        <div class="pt-3 mt-3 d-flex justify-content-between">
+          <button class="btn btn-lg btn-link" id="prevBtn">Previous</button>
+
+          <button class="btn btn-primary rounded-0" id="nextBtn">
+            Save & Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5 d-none" id="resultPanel">
+      <div class="p-5 shadow-lg">
+        <h3>Result</h3>
+        <hr>
+        <p>Your total score is : <span id="totalScore"></span></p>
+        <hr>
+        <div class="text-end">
+          <button onclick="location.reload()" class="btn btn-primary rounded-0">
+            Try Again
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
