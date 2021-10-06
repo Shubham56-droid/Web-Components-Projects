@@ -11,6 +11,11 @@ body{
     
 }
 
+div h1 {
+    color: white;
+    text-align: center;
+}
+
 .boddy
 {
   display: flex;

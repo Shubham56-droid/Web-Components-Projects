@@ -43,7 +43,7 @@ $(function() {
         $("#trialsleft").empty();
 
         for (var i = 0; i < trialleft; i++) {
-            $("#trialsleft").append('<img src="/img/heart.png" class="life">');
+            $("#trialsleft").append('<img src="img/heart.png" class="life">');
         }
     }
 
@@ -87,7 +87,7 @@ $(function() {
 
     //show some random fruits//
     function chooseFruit() {
-        $("#fruit1").attr('src', '/img/' + fruits[Math.round(8 * Math.random())] + '.png')
+        $("#fruit1").attr('src', 'img/' + fruits[Math.round(8 * Math.random())] + '.png')
     }
     // stop the fruits from falling when game over//
     function stopaction() {
