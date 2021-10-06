@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- The Author meta propagates the byline in a number of social networks -->
+<meta name="author" content="Open Source Politics" />
+
+<meta property="og:title"
+    content="
+      OSP Budget
+    ">
+
+<meta property="og:description"
+    content="
+        Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne.
+      ">
+
+
+<meta property="og:url" content="http://opensourcepolitics.eu/participatory-budgeting" />
+
+
+    <meta property="og:site_name" content="Open Source Politics" />
+
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:site" content="@OpenSourcePol" />
+    <meta name="twitter:description" content="Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne." />
+
+
+
+  <!-- Article specific OG data -->
+  <!-- The OG:Type dictates a number of other tags on posts. -->
+  <meta property="og:type" content="article" />
+  <!-- <meta property="article:published_time" content="2017-05-23 18:02:11 +0200" /> -->
+
+  <!-- page.modified isn't a natural Jekyll property, but it can be added. -->
+  
+
+  <!-- Here my author and publisher tags are the same (yay self-publishing) -->
+  <!-- <meta property="article:author" content="" /> -->
+  <!-- But if your site has its own page, this is where to put it. -->
+  <!-- <meta property="article:publisher" content="" /> -->
+
+  <!-- Article section isn't a required property, but it can be good to have -->
+  <meta property="article:section" content="" />
+
+  <!-- I use the page.categories property for OG tags. -->
+  
+
+  <!-- I prefer the summary_large_image Twitter card for posts. -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- You, you're the creator. -->
+  <meta name="twitter:creator" content="@OpenSourcePol" />
+  <!-- This property is for the article title, not site title. -->
+  <meta name="twitter:title" content="OSP Budget" />
+
+
+  
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+  
+
+  
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OSP Budget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Outils numériques de démocratie participative : nous mettons en place des solutions civic tech open source et des méthodes efficaces pour faciliter la participation citoyenne.">
+    <link rel="canonical" href="http://opensourcepolitics.eu/participatory-budgeting">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style_custom.css">
+
+    <!-- Custom Fonts -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script async src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script async src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.osp.cat/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '22']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.osp.cat/piwik.php?idsite=22&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
+    
+    <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2029777920577803');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2029777920577803&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+</head>
+
+    <body class="post">
+        <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="page-scroll" href="/"><img src="/img/logos/logo-osp.svg" width="60px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+          <li>
+            <a class="page-scroll menu-item" href="/#references" style = "margin-left:4px;">Réalisations</a>
+          </li>
+          <li>
+            <a class="page-scroll menu-item" href="/#decidim" style = "margin-left:4px;">Decidim</a>
+          </li>
+          <li>
+            <a class="page-scroll menu-item" href="https://medium.com/open-source-politics" style = "margin-left:4px;">Articles</a>
+          </li>
+          <li>
+            <a class="page-scroll menu-item" href="#jobs" style = "margin-left:4px;">On recrute !</a>
+          </li>
+
+          <li>
+            <a class="page-scroll menu-item" href="/#contact" style = "margin-left:4px;">Contact</a>
+          </li>
+        </ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="/fr/accueil"><span style="font-size:1em">fr</span></a></li>
+  <li><a href="/en/home"><span style="font-size:1.5em;color:#FDC63D">en</span> </a></li>
+  
+  <li><a href="newsletter"><i class="fa fa-envelope"></i></a>
+  </li>
+  
+  <li><a href="http://twitter.com/opensourcepol"><i class="fa fa-twitter"></i></a>
+  </li>
+  
+  <li><a href="https://www.facebook.com/OpenSourcePolitics/"><i class="fa fa-facebook"></i></a>
+  </li>
+  
+  <li><a href="https://github.com/OpenSourcePolitics"><i class="fa fa-github"></i></a>
+  </li>
+  
+  <li><a href="https://medium.com/open-source-politics"><i class="fa fa-medium"></i></a>
+  </li>
+  
+  <li><a href="https://meetup.com/fr-FR/Open-Source-Politics/"><i class="fa fa-meetup"></i></a>
+  </li>
+  
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
+
+        <div class="container-fluid"style="background-color:#0050A0;margin-top:-20px;">
+            <center>
+              <h1 style="margin-top:30px;"><span style="color:#fff;font-size:1.3em;">OSP Budget</span></h1>
+              <!-- <img src="/img/budget-participatif.png" style="margin-top:-20px;width:500px;"> -->
+              <p style="margin-top:-5px;"><b><span style="color:#fff;">Digital tools and support for participatory budgeting</b></span></p>
+            </center>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9" style="padding-left:30px;padding-right:30px;">
+                <!-- Preview Image -->
+              
+             
+              <br>
+                  <!-- definition -->
+<div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>WHAT IS PARTICIPATORY BUDGETING?</h2>
+
+      <p><b>Participatory budgeting</b> aims at involving citizens in the financial management of their city, their department, etc. A community wishing to set up a participatory budget will follow several steps: define the percentage of the total budget that will be allocated to the process and then collect citizens' proposals regarding the use of these funds. Finally, these proposals will be put to the test through voting and the best projects will then be set up. At a time when people are increasingly distrustful of politics, such an approach helps to restore the bond of trust between elected representatives and citizens by setting up a system of participation that enforces respect of the commitments made by all.</p>
+    </div>
+    <div class="col-lg-6 hidden-xs">
+      <center>
+      <ul class="list-inline clearfix">
+        <li><img src="img/laptop.png" width="300" /></li>
+        <li><img src="img/pic-bp.png" width="300" /></li>
+      </ul>  
+      </center>
+    </div>
+  </div>
+</div>
+<!-- fin -->
+<p><br />
+<!-- outils dispos --></p>
+<div>
+  <div class="row">
+    <div class="col-lg-6">
+      <center>
+        <ul class="list-inline clearfix">
+          <li><img src="img/consul.png" width="200" /></li>
+          <li><img src="img/consul-capture.png" width="400" /></li>
+        </ul>
+      </center>
+    </div>
+    <div class="col-lg-6">
+      <h2>Consul is the reference tool when it comes to participatory budgeting.</h2>
+
+      <p><a href="http://decide.es/en"><b>Consul</b></a> is an open source platform dedicated to <b>civic participation</b> that has been developed over the past two years by the Madrid City Council. In less than one year by more than 30 local authorities in Spain and Latin America, including the city councils of Barcelona, ​​Valencia and Buenos Aires.</p>
+
+      <p>The platform allows citizens to directly propose, support and decide on participatory budget expenditures throughout the city and neighborhoods, while providing the local institution with a complete administration interface to oversee all stages and evaluate proposals.</p>
+
+    </div>
+  </div>
+</div>
+<!-- fin -->
+<p><br /></p>
+
+<h2 id="participatory-budgeting-requires-significant-support">Participatory budgeting requires significant support</h2>
+
+<p>Since it has a direct impact on the use of public funds, such a process must be totally inclusive. For this reason, we work with field offices to present the principles and relevance of participatory budgets and to draw as many proposals as possible from the participants. We then help them improve these ideas to make them real investment projects.</p>
+
+<p><br />
+<!-- offre accompagnement --></p>
+<p>&nbsp;</p>
+<div style="border-radius:2px;">
+    <div class="row">
+      <div class="col-lg-3">
+        <center><img src="img/accompagnement-orange.png" width="150" /></center>
+      </div>
+      <div class="col-lg-9">
+        <center>
+        <h2>Support &amp; consulting</h2>
+<p>A consultation process must <b>be facilitated and brought to life</b>. This requires time as well as <b>specific skills</b> (content creation, newsletters, collective intelligence workshops). It can be tricky to find internal resources, that is why we created this <b>tailor made support &amp; consulting offer</b> which we can provide to your services</p>
+        </center>
+      </div>
+    </div>
+</div>
+<p><br /></p>
+<center><a href="/fr/accueil#contact" class="btn btn-primary">CONTACT US FOR MORE INFORMATION</a></center>
+<p>&nbsp;</p>
+
+<div class="well">
+<h4>ABOUT OPEN SOURCE POLITICS</h4>
+
+Open Source Politics is a solidarity economy company that builds <b>participatory democracy</b> open source tools. We provide technical and methodological support to both public and private stakeholders that are willing to engage in online or offline participation processes. We work on different types of projects: <b>public consultations</b>, <b>participatory budgeting</b>, <b>collaborative decision-making</b>, etc.
+
+<br />
+Our action is guided by the principles of open government: transparency, participation and cooperation. We are co-founded several Civic Tech : <a href="http://democracyos.eu" target="blank">DemocracyOS France</a>, <a href="http://democracy.earth" target="blank">Democracy Earth</a>, hackathons <a href="http://opendemocracynow.net" target="blank">Open Democracy Now</a>.
+</div>
+
+             </div>
+            <div class="col-sm-3">
+              <br>
+              <div class="well" style = "padding:19px;background-color: #ecf0f1;">
+                <center>
+                  <a href="https://ospforms.typeform.com/to/A3FKHZ" target="_blank" ><img src="/img/forms.png" width="150px" alt="formulaire"></a>
+                  <!-- <p>&nbsp;</p> -->
+                   <p>You want to set up a participation process. <b>Fill in our questionnaire to precisely define your needs</b> and we will contact as soon as possible.</p>
+                  <!-- <p>&nbsp;</p> -->
+                  <a href="https://ospforms.typeform.com/to/A3FKHZ"  target="_blank" class="btn btn-primary">Questionnaire</a>
+                </center>
+              </div>
+              <div>
+                <h4>Other products</h4>
+<div class="list-group">
+      
+          
+               <li class="list-group-item"><a href="/civic-tech-training">OSP Training</a></li>
+          
+               <li class="list-group-item"><a href="/en-custom">OSP Custom</a></li>
+          
+               <li class="list-group-item"><a href="/participatory-budgeting">OSP Budget</a></li>
+          
+               <li class="list-group-item"><a href="/public-consultations">OSP Agora</a></li>
+          
+      
+</div>
+
+              </div>
+              
+              <div>
+                
+                <h4>Référence</h4>
+                <a href="/refs-en/2017-03-29-bp-rivp/" class="btn btn-secondary btn-project"><i class="fa fa-link"></i>&nbsp;&nbsp;Participatory Budget RIVP</a>
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    <br>
+    <footer style="background-color:#000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- <ul class="list-inline clearfix">
+          
+          <li><b class="menu-item" style="color:#fff;">Offers :</b></li>
+          
+          
+          <li><a href="/public-consultations" class="menu-item" style="color:#fff;">OSP Agora</a></li>
+          
+          
+            <li><a href="/participatory-budgeting" class="menu-item" style="color:#fff;">OSP Bugdet</a></li>
+            
+            
+            <li><a href="/en-custom" class="menu-item" style="color:#fff;">OSP Custom</a></li>
+            
+            
+            <li><a href="/civic-tech-training" class="menu-item" style="color:#fff;">OSP Training</a></li>
+            
+          </ul> -->
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline clearfix">
+            
+            <li><a href="/en/Legal-Notice" class="menu-item" style="color:#fff;">Legal Notice</a></li>
+            
+            
+            <li><a href="/en/Credits" class="menu-item" style="color:#fff;">Credits</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div style ="font-size:1em;color:#fff;">
+            <center><img src="/img/logos/logo-osp.svg" width="80px" style="margin-top:-70px;" class="hidden-xs"></center>
+            <br>
+            <p>Open Source Politics,<br>
+              RCS Paris 820 412 161<br>
+              32 rue des Cascades<br>
+              75020 Paris (France)</p>
+            </div>
+          </div>
+          <div class="col-md-4" style = "padding-right:20px;color:#fff;">
+            <p>Open Source Politics is a solidarity economy LLC. We advocate the principles of open source through the tools we build and our partnerships.</p>
+          </div>
+          <div class="col-md-4" style = "padding-right:20px;color:#fff;">
+            <br>
+            <p>contact@opensourcepolitics.eu<br>
+              <!--{ site.data.i18n[page.locale].footer.right-bottom }}<br>-->
+            </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" id="cookiebanner" src="http://cookiebanner.eu/js/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#000" data-link="#dddddd"
+  data-moreinfo="http://www.cnil.fr/vos-obligations/sites-web-cookies-et-autres-traceurs/que-dit-la-loi/"
+  data-message="Les cookies assurent le bon fonctionnement de notre site Internet en retenant vos préférences. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"></script>
+
+    <!-- jQuery Version 1.11.0 -->
+<script defer src="/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script defer src="/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script defer src="/js/jquery.easing.min.js"></script>
+<script defer src="/js/classie.js"></script>
+<script defer src="/js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script defer src="/js/jqBootstrapValidation.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script defer src="/js/agency.js"></script>
+
+<script defer src="/js/drift.js"></script>
+
+<script defer src="/js/google_analytics.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.2/lazyload.min.js"></script>
+
+<script defer src="/js/lazyload.js"></script>
+
+    </body>
+</html>
