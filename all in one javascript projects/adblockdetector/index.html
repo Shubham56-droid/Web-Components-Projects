@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detect adblock</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="detect"></div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="warn-icon">
+                <span><i class="fas fa-exclamation"></i></span>
+            </div>
+            <h2>adblock detected!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati iure officiis delectus.
+            </p>
+            <button>okay! i'll whitelist</button>
+            <p>pls reload after whitelist</p>
+
+        </div>
+    </div>
+
+    <script>
+        const detect = document.querySelector("#detect");
+        const wrapper = document.querySelector(".wrapper");
+        const button = wrapper.querySelector("button");
+        let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
+        for(let item of adClasses){
+          detect.classList.add(item);
+        }
+        let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+        if(!wrapper.classList.contains("show")){
+          getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+        }
+        button.addEventListener("click", ()=>{
+            if(!wrapper.classList.contains("show")){
+          getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+        }
+        });
+      </script>
+
+    <!-- <script>
+        const detect = document.querySelector('#detect');
+        const rapper = document.querySelector('.wrapper');
+        const button = wrapper.querySelector("")
+
+        //possible classes tthat adblocker avoid to render
+
+        let adClasses = ["ad", "ads", "adsbox", "ad-placement", "doubleclick", "ad-placeholder", "ad-badge"];
+
+        for (let item of adClasses) {
+            detect.classList.add(item); //adding all array in detect element
+        }
+
+        //getting display property value of our detect element
+
+        let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+        //console.log(getProperty); 
+
+        button.addEventListener("click", () => {
+            wrapper.classList.remove("show");
+        });
+
+        if(!wrapper.classList.contains("show")){
+            getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+        }
+
+
+    </script> -->
+</body>
+
+</html>
