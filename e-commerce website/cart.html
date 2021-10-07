@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- The page has a title e-commerce Store -->
+  <title>Shopping Cart | e-commerce Store</title>
+
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- External css file index.css placed in the folder css is linked -->
+  <link href="css/cart.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+  <div class="myContainer">
+
+    <div class="myHeader">
+
+      <!-- Navbar -->
+
+      <div class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">e-commerce Store</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html"><i class="fas fa-user"></i> Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-sign-in-alt"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Table -->
+    <div class="myBody">
+      <div class="container centered">
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Item Name</th>
+                  <th>Quantity</th>
+                  <th class="text-center">Price</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-md-6">
+                    <div class="media">
+                      <a class="thumbnail pull-left" href="#"> <img class="media-object"
+                          src="product_img/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="#">Product name</a></h4>
+                        <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-md-1" style="text-align: center">
+                    <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                  </td>
+                  <td class="col-md-1 text-center"><strong>Rs 0.00</strong></td>
+                  <td class="col-md-1">
+                    <button type="button" class="btn btn-danger">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-md-6">
+                    <div class="media">
+                      <a class="thumbnail pull-left" href="#"> <img class="media-object"
+                          src="product_img/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a href="#">Product name</a></h4>
+                        <span>Status: </span><span class="text-warning"><strong>Only a few left</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="col-md-1" style="text-align: center">
+                    <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                  </td>
+                  <td class="col-md-1 text-center"><strong>Rs 0.00</strong></td>
+                  <td class="col-md-1">
+                    <button type="button" class="btn btn-danger">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>   </td>
+                  <td>   </td>
+                  <td>
+                    <h3>Total</h3>
+                  </td>
+                  <td class="text-right">
+                    <h3><strong>Rs 0/-</strong></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <a href="success.html" class="btn btn-primary btn-lg float-right">Confirm Order</a>
+      </div>
+
+    </div>
+
+    <div class="myFooter">
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>Copyright © e-commerce Store. All Rights Reserved | Contact Us: +91 90000 00000</p>
+
+        </div>
+      </footer>
+    </div>
+
+
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
