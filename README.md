@@ -6,7 +6,7 @@
 <h1>🛠HTML-CSS-JavaScript-Effects-ANIMATION-PROJECTS</h1>
 <h2>🛡Notice And Rules</h2>
 <ul>
-  <li>⚔️1. Contributors are suppose to make contibution roperly in a folder in main branch</li>
+  <li>⚔️1. Contributors are suppose to make contibution properly in a folder in main branch</li>
   <li>⚔️2. Contributer are requested to star this repository and follow me.</li>
   <li>⚔️3. Be patience if your PR is not merged it will be merged as soon as u follow rule noumber 2</li>
 </ul>
