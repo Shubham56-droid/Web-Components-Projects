@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.myContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.myHeader {
+  padding: 10px;
+}
+
+.myBody {
+  padding: 4% 14% 17%;
+  height: -webkit-fill-available;
+}
+
+.myFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.5rem 7%;
+}
+
+.nav-item {
+  padding-right: 10px;
+}
+
+/* Content Section*/
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.card-body {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktops: */
+  .btn-lg {
+    text-align: center;
+    width: 25%;
+    border-radius: 6rem;
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .btn-lg {
+    text-align: center;
+    width: 50%;
+    border-radius: 6rem;
+    margin: 50px 0;
+  }
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: #101010;
+  color: #9d9d9d;
+  width: 100%;
+  text-align: center;
+}
