@@ -77,7 +77,7 @@ body {
 
 /* Footer */
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   padding: 10px 0;
   background-color: #101010;
