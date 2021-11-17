@@ -1,0 +1,76 @@
+/*
+    Name - yourname
+    Student Number - studentnumber
+*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url("../images/Background_Img/BackgroundImg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_container
+{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+.main_container .content
+{
+    background-color: rgba(255, 255, 255, 0.185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    backdrop-filter: blur(15px);
+}
+.main_container h1
+{
+    font-size: 50px;
+}
+.main_container .details
+{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.main_container .details .myimg
+{
+    margin-left: 40px;
+}
+.main_container .details img
+{
+    height:360px;
+    width: auto; 
+}
+
+.main_container .details .detailsdesc
+{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Signika',sans-serif;
+}
+.returnContent
+{
+    font-size: 20px;
+    font-family: 'Signika',sans-serif;
+}
+.returnContent a
+{
+    text-decoration: none;
+    color: crimson;
+}
