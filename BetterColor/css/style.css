@@ -1,0 +1,123 @@
+.header-blue {
+  background: linear-gradient(135deg, #172a74, #21a9af);
+  background-color: #184e8e;
+  padding-bottom: 80px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: Acme, sans-serif;
+}
+
+#upper {
+  background: linear-gradient(135deg, #172a74, #21a9af);
+  height: 270px;
+}
+
+#upper a {
+  margin-block-end: auto;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: white;
+  padding: 0.7em 0.9em;
+  transition: 0.3s all;
+  background: #4285f4;
+  border-radius: 4em;
+  box-shadow: 0 0.15em 0.5em rgb(66 133 244 / 75%);
+  font-family: Acme, sans-serif;
+}
+
+h1 {
+  padding-top: 30px;
+  color: #efb22d;
+}
+
+#upper p {
+  font-family: Bitter, serif;
+  text-align: center;
+  font-size: 25px;
+  color: var(--bs-gray-100);
+  word-spacing: 5px;
+}
+
+#click {
+  display: flex;
+  padding: 40px;
+  margin-top: -60px;
+  justify-content: space-around;
+}
+
+#upper .left p {
+  color: var(--bs-gray-100);
+  font-size: 20px;
+  font-family: Acme, sans-serif;
+}
+#upper .right p {
+  color: var(--bs-gray-100);
+  font-size: 20px;
+  font-family: Acme, sans-serif;
+}
+
+#message {
+  color: #000000;
+  padding-top: 4rem;
+  font-size: 22px;
+  padding-top: 5rem;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: Bitter, serif;
+}
+
+#bg {
+  padding: 8rem;
+}
+#one {
+  padding-top: 8rem;
+  text-align: center;
+}
+#two {
+  padding-top: 5rem;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: Bitter, serif;
+  font-size: 22px;
+}
+
+#textcode {
+  width: 101px;
+}
+#colorcode {
+  width: 101px;
+}
+
+#click .left button {
+  padding: 6px;
+  background-color: #5784f5;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#click .left button:active {
+  background-color: #809ce2;
+}
+
+#click .right button {
+  padding: 6px;
+  background-color: #5784f5;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#click .right button:active {
+  background-color: #809ce2;
+}
