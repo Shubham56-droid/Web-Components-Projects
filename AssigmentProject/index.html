@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<!--
+    ==============================
+        Your Name Bro
+        Your Student Number Bro
+    ==============================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name Here</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="gridContainer">
+    
+        <div class="gridItem item1"><p>Assignment #4 - <span>YOUR FULL NAME</span> and <span>YOUR STUDENT NUMBER</span></p></div>
+        <div class="gridItem item2">
+            <h3>Personal Information</h3>
+            <form class="PersonalInfo">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" placeholder="First name" />
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last name"/>
+                <label for="Snum">Student number</label>
+                <input type="number" id="Snum" name="Snum" placeholder="Student number"/>
+                <label for="email">Sheridan email</label>
+                <input type="email" id="Semail" name="Semail" placeholder="Email Address"/>
+            </form>
+        </div>
+        <div class="gridItem item3">
+            <h3>My Sheridan Experience</h3>
+            <div class="ExpContainer">
+                <label for="sdate">Starting Date At Sheridan</label>
+                <input type="date" name="sdate" id="sdate"> 
+                <label for="expSheridan">Previous Year Of Post Secondary Experience</label>
+                <select name="expSheridan" id="expSheridan">
+                    <option value="default" selected>0</option>
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="third">3</option>
+                    <option value="forth">4</option>
+                    <option value="fifth">5</option>
+                    <option value="sixth">6</option>
+                    <option value="seventh">7</option>
+                </select>
+                <label for="campus">Campus</label>
+                <select name="campus" id="campus">
+                    <option value="default" selected>Davis</option>
+                    <option value="first">Trafalgr</option>
+                    <option value="second">HMC</option>
+                </select>
+            </div>
+        </div>
+        <div class="gridItem item4">
+            <h3>Financial Data</h3>
+            <div class="financialData">
+                <label for="amount">Amount Of Money Recived</label>
+                <input type="number">
+                <label for="source">Money Source</label>
+                <div class="moneySource">
+                    <div class="inputcheck">
+                    <input type="checkbox" name="s1" id="s1">
+                    <label for="s1">Scolarship</label>
+                    </div>
+                    <div class="inputcheck">
+                    <input type="checkbox" name="s2" id="s2">
+                    <label for="s2">RESP</label>
+                    </div>
+                    <div class="inputcheck">
+                        <input type="checkbox" name="s3" id="s3">
+                        <label for="s3">Bursary</label>
+                    </div>
+                    <div class="inputcheck">
+                        <input type="checkbox" name="s4" id="s4">
+                        <label for="s4">OSAP</label>
+                    </div>
+                    <div class="inputcheck">
+                    <input type="checkbox" name="s5" id="s5">
+                    <label for="s5">Grants</label>
+                    </div>
+                    <div class="inputcheck">
+                        <input type="checkbox" name="s6" id="s6">
+                        <label for="s6">Others</label>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="gridItem item5">
+            <h3>Comments</h3>
+            <div class="commentSec">
+                <label for="comment">Comment here (Optional)</label>
+                <textarea name="comment" id="" cols="95" rows="4" placeholder="Please enter your comments..."></textarea>
+            </div>
+        </div>
 
+        <div class="gridItem item6">
+            <button type="submit" onclick="submitFunc()">Submit</button>
+            <button type="reset" onclick="resetFunc()">Reset</button>
+        </div>
+        
+<script src="./javascript/script.js"></script>
+</body>
+</html>

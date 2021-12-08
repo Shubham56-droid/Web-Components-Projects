@@ -1,0 +1,345 @@
+/* 
+    ============================
+        Your Name Bro
+        Your Student Number Bro
+    ============================
+*/
+
+/*
+    ------------------
+     Basic Page SetUp
+    ------------------
+*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/*
+    ------------------
+     Basic Body SetUp
+    ------------------
+*/
+body
+{
+    min-height: 100vh;
+    width: 100%; 
+}
+/*
+    -------------------------
+     Background of body setup
+    -------------------------
+*/
+body::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ee0000,#ff0062 50%, #ffc107 50%,#ff6207 );
+    z-index: -10;
+}
+
+body::after
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(155deg,#002cee,#00ffea 50%,transparent 50%,transparent );
+    z-index: -10;
+}
+/*
+    --------------------------------------------------------------------
+     Grid layout applied to body here gridContainer is classname of body
+    --------------------------------------------------------------------
+*/
+.gridContainer
+{
+    position: relative;
+    z-index: 10;
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px; 
+}
+/*
+    ---------------------------------------------------------------
+    Grid is diveded into six segments having common class gridItem
+    ---------------------------------------------------------------
+*/
+.gridItem
+{
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
+    backdrop-filter: blur(65px);
+}
+/*
+    --------------------------------------------------------------
+    gridItem have a specific classname Item1,Item2,Item3....Item6
+    --------------------------------------------------------------
+*/
+
+.item1
+{
+    /* 
+    -------------------------
+        grid layout for Item1
+    --------------------------
+    */
+    grid-column: 1 / span 4;
+    grid-row: 1;
+
+    /*
+    -------------------------
+        Formatting Item1    
+    -------------------------
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 0.7px solid rgba(255, 255, 255, 0.315);
+    font-size: 18px;
+}
+/*
+    ---------------------------
+       Formatting color of span
+    ---------------------------
+*/
+
+
+.item1 span
+{
+    color: rgb(255, 0, 98);
+}
+
+
+
+.item2
+{
+    /* 
+    -------------------------
+        grid layout for Item2
+    --------------------------
+    */
+    grid-row: 2 / span 6;
+    grid-column: 1 / span 2;
+    /*
+    -------------------------
+        Formatting Item2    
+    -------------------------
+    */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.item2 .PersonalInfo
+{
+    display: flex;  
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+}
+.item2 .PersonalInfo label
+{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(89, 0, 255);
+}
+.item2 .PersonalInfo input
+{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+.item3
+{
+    /* 
+    -------------------------
+        grid layout for Item3
+    --------------------------
+    */
+    grid-row: 2 / span 3;
+    grid-column: 3 / span 2;
+    /*
+    -------------------------
+        Formatting Item3  
+    -------------------------
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.item3 .ExpContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+}
+.item3 .ExpContainer label
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(89, 0, 255);
+    border: none;
+    outline: none;
+}
+
+
+.item4
+{
+    /* 
+    -------------------------
+        grid layout for Item4
+    --------------------------
+    */
+    grid-row: 5 / span 3;
+    grid-column: 3 / span 2;
+    /*
+    -------------------------
+        Formatting Item4
+    -------------------------
+    */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.item4 .financialData
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.item4 .financialData label
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(89, 0, 255);
+}
+.item4 .financialData input
+{
+    border: none;
+    outline: none;
+    padding: 4px;
+    border-radius: 20px;
+ 
+    margin-top: 4px;
+    padding-left: 20px;
+}
+
+.item4 .financialData .moneySource
+{
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.349);
+}
+.item4 .financialData .moneySource .inputcheck
+{
+    display: flex;
+    align-items: center;  
+}
+.item4 .financialData .moneySource .inputcheck label
+{
+    color: rgb(94, 94, 94);
+}
+
+
+.item5
+{
+    /* 
+    ---------------------------
+        grid layout for Item 5
+    ---------------------------
+    */
+    grid-column: 1 / span 4;
+    grid-row: 8;
+    /*
+    -------------------------
+        Formatting Item 5
+    -------------------------
+    */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.item5 .commentSec
+{
+    margin-top: 15px;
+}
+.item5 .commentSec label
+{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(89, 0, 255);
+}
+.item5 .commentSec textarea
+{
+    margin-top: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.item6
+{
+    /* 
+    ---------------------------
+        grid layout for Item 5
+    ---------------------------
+    */
+    grid-column: 1 / span 4;
+    grid-row: 9;
+    /*
+    -------------------------
+        Formatting Item 5
+    -------------------------
+    */
+    display: flex;
+    padding: 15px;
+}
+.item6 button
+{
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background: #ffffff85;
+    color: black;
+    padding: 7px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.item6 button:hover
+{
+    background: rgb(255, 255, 255);
+    transition: 0.5s;
+}
