@@ -1,0 +1,53 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body 
+{
+    background:#000;
+    overflow: hidden;
+    height: 100vh;
+}
+i
+{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent,#fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate linear 5s infinite;
+}
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent,rgb(89, 0, 255));
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent,rgb(255, 0, 0));
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent,rgb(255, 174, 0));
+}
+i:nth-child(3n+4)
+{
+    background: linear-gradient(transparent,rgb(0, 255, 21));
+}
+i:nth-child(3n+5)
+{
+    background: linear-gradient(transparent,rgb(255, 0, 149));
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-200px);
+    }
+    100%
+    {
+        transform: translateY(calc(100vh + 200px));
+    }
+}
