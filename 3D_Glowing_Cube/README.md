@@ -12,4 +12,4 @@
 <br/>
 <a href="https://vigilant-visvesvaraya-6cbb91.netlify.app/"><strong>View Website</strong></a>
 <br/>
-<a href="https://github.com/Shubham56-droid/HTML-CSS-JavaScript-Projects/new/main/3D_Glowing_Cube"><strong>View Project On Github</strong></a>
+<a href="https://github.com/Shubham56-droid/HTML-CSS-JavaScript-Projects/tree/main/3D_Glowing_Cube"><strong>View Project On Github</strong></a>
