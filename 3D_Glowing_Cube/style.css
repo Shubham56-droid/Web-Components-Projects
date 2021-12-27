@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 *
 {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family:'Oswald',sans-serif;
 }
+
 body
 {
     display: flex;
@@ -50,6 +54,23 @@ body
     height: 100%;
     background: linear-gradient(#151515,#00ec00);
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.cube div span h2
+{
+    position: absolute;
+    font-size: 10em;
+    color: #fff;
+    transform: translateZ(50px);
+}
+.cube div span h2:nth-child(1)
+{
+    transform: translateZ(0) translateY(20px);
+    color: rgba(0, 0, 0, 0.2);
+    filter: blur(2px);
 }
 .top
 {
