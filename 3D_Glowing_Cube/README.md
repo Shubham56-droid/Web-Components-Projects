@@ -1,8 +1,11 @@
 <h1> 3D Glowing Effect Cube </h1>
 
 <h2>Language Used</h2>
-<p>HTML</p>
-<p>CSS</p>
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+</ol>  
+
 <h2>Screenshot Of Images</h2>
 <img src="./images/Screenshot (173).png" />
 <h2>Link To The Website</h2>
