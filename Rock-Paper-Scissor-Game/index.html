@@ -9,12 +9,67 @@
 </head>
 <body>
     <canvas id="canvas1"></canvas>
-    <div class="heading">
-        <h1>Rock Paper Scissor Game</h1>
-    </div>
+    <section class="game active" id="game">
 
+        <div class="intro active" id="intro">
+            <h1>Rock Paper Scissor Game</h1>
+            <button class="playbtn" id="playbtn">Let's Play</button>
+        </div>
+
+        <div class="main-game" id="main-game">
+            
+            <div class="match">
+                <div class="hands" id="hands1">
+                    <img class="player-hand" src="./images/rock-removebg-preview.png" alt="img" style="height: 200px;">
+                </div>
+                <div class="hands" id="result">
+                    <p style="color: #fff;">You V/S Computer</p>
+                </div>
+                <div class="hands" id="hands2">
+                    <img class="computer-hand" src="./images/rock-removebg-preview.png" alt="img" style="height: 200px;">
+                </div>        
+                
+            </div>
     
+            <div class="score">
+                <h2>Score Board</h2>
+                <div class="mainBoard">
+                    <div class="player-score">
+                        <p>Player</p>
+                        <p>0</p>
+                    </div>
+                    <div class="computer-score">
+                        <p>Computer</p>
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
     
+            <div class="option">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissor">scissors</button>
+            </div>
+
+            <div class="exit-game">
+                <button id="exitgame">
+                    exit game
+                </button>
+            </div>
+
+        </div>
+
+        <div class="warning" id="warning">
+            <div class="waring-message">
+                <p>Are you sure you want to exit the game ?</p>
+                <button id="btnyes">Yes</button>
+                <button id="btnno">No</button>
+            </div>
+        </div>
+        
+        
+    </section>
+
     <script src="./Background.js"></script>
     <script src="./script.js"></script>
 </body>

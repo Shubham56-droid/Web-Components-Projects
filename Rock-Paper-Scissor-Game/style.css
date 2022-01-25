@@ -1,0 +1,242 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgb(44, 44, 44),#000);
+}
+#canvas1
+{
+    position: absolute;
+    z-index: -1;
+}
+
+
+.game
+{
+    height: 100vh;
+    width: 100%;
+}
+
+.game.active
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro
+{
+    padding-top: 100px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.intro.active
+{
+    display: block;
+}
+
+.intro h1
+{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.041);
+    margin-top: 50%x;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 72px;
+    backdrop-filter: blur(7px);
+    cursor: pointer;
+}
+
+.intro .playbtn
+{
+    position: relative;
+    color: #fff;
+    width: 250px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 35px;
+    border: 0px;
+    overflow: hidden;
+    background:linear-gradient(90deg,#f5008fab,#5900ffd7);
+}
+
+span
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+.main-game
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    padding: 20px;
+}
+.main-game .match
+{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-game .match .hands
+{
+    background-color: rgba(255, 255, 255, 0.103);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+}
+.main-game .score
+{
+    height: 25vh;
+    width: 100%;
+    margin-top: 20px;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 75px;
+}
+.main-game .score h2
+{
+    color: rgb(255, 0, 140);
+    font-weight: 600;
+    font-size: 33px;
+    font-family: sans-serif;
+    text-shadow: white 1px 1px;
+}
+
+.main-game .score .mainBoard
+{
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.main-game .score .mainBoard .player-score
+{
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.096);
+    padding: 5px;
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+}
+.main-game .score .mainBoard .player-score h2
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.main-game .score .mainBoard .player-score p
+{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-game .score .mainBoard .computer-score
+{
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.096);
+    padding: 5px;
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+}
+.main-game .score .mainBoard .computer-score h2
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.main-game .score .mainBoard .computer-score p
+{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-game .option
+{
+    height: 15vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.main-game .option button
+{
+
+}
+
+
+
+
+
+
+
+.main-game.active
+{
+    display: block;
+}
+
+.warning
+{
+    position: relative;
+    z-index: 1000000;
+    background-color: red;
+    display: none;
+}
+.warning.active
+{
+    display: block;
+}
+
+
