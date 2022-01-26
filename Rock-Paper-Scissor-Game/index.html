@@ -12,21 +12,37 @@
     <section class="game active" id="game">
 
         <div class="intro active" id="intro">
-            <h1>Rock Paper Scissor Game</h1>
-            <button class="playbtn" id="playbtn">Let's Play</button>
+            <div class="img" id="img">
+                <img src="./images/mainImg.png" alt="mainImg">
+            </div>
+            <div class="mainHeading" id="mainHeading">
+                <h1>Rock Paper Scissor Game</h1>
+                <button class="playbtn" id="playbtn">Let's Play</button>
+                <button class="playbtn" id="aboutbtn">About</button>  
+            </div>
+            <div class="aboutme"  id="aboutme">
+                <h2>Project Name - Rock Paper Scissor Game</h2>
+                <h3>Made By - Harman Singh</h3>
+                <h3>School Id - 123456</h3>
+                <p><span>About Project 😀</span><br/>This Project is made using pure HTML , CSS and  JavaScript. It has glassmorphisms effect that give it glassy look. Also I have added nice button hover effect to make it look nice. Animation are there  during transition of the content on the html page. This project is a rock paper scissor game with has dynamic changes of images when user click's the rock, paper and scissor button  as well as result is been declared in the result section.</p>
+                <button class="backbtn" id="backbtn">back</button>
+            </div>
+            
         </div>
+
 
         <div class="main-game" id="main-game">
             
             <div class="match">
                 <div class="hands" id="hands1">
-                    <img class="player-hand" src="./images/rock-removebg-preview.png" alt="img" style="height: 200px;">
+                    <img class="player-hand" src="./images/rock.png" alt="img" style="height: 200px;">
                 </div>
-                <div class="hands" id="result">
-                    <p style="color: #fff;">You V/S Computer</p>
+                <div class="hands" class="winner">
+                    <p  id="result">You V/S Computer</p>
+                    <p class="movesleft" id="movesleft">Moves Left : 10</p>
                 </div>
                 <div class="hands" id="hands2">
-                    <img class="computer-hand" src="./images/rock-removebg-preview.png" alt="img" style="height: 200px;">
+                    <img class="computer-hand" src="./images/rock.png" alt="img" style="height: 200px;">
                 </div>        
                 
             </div>
@@ -36,22 +52,28 @@
                 <div class="mainBoard">
                     <div class="player-score">
                         <p>Player</p>
-                        <p>0</p>
+                        <p id="playerScore">0</p>
                     </div>
                     <div class="computer-score">
                         <p>Computer</p>
-                        <p>0</p>
+                        <p id="computerScore">0</p>
                     </div>
                 </div>
             </div>
     
-            <div class="option">
-                <button class="rock">rock</button>
-                <button class="paper">paper</button>
-                <button class="scissor">scissors</button>
+            <div class="option" id="option">
+                <button class="rock" id="rock">rock</button>
+                <button class="paper" id="paper">paper</button>
+                <button class="scissor" id="scissors">scissors</button>
             </div>
 
-            <div class="exit-game">
+            <div class="mainResult" id="mainResult">
+                <p><span>Game Over !!!</span></p>
+                <p id="resultmain">You Win The Game.</p>
+                <button id="restart" class="restart">Restart</button>
+            </div>
+
+            <div class="exit-game" id="exitBox">
                 <button id="exitgame">
                     exit game
                 </button>
@@ -62,8 +84,11 @@
         <div class="warning" id="warning">
             <div class="waring-message">
                 <p>Are you sure you want to exit the game ?</p>
-                <button id="btnyes">Yes</button>
-                <button id="btnno">No</button>
+                <div class="btnopt">
+                <button id="btnyes" class="btnop">Yes</button>
+                <button id="btnno" class="btnop">No</button>
+                </div>
+                
             </div>
         </div>
         

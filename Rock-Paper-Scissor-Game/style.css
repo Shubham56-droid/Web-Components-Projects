@@ -3,13 +3,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 1s;
 }
 body
 {
     height: 100vh;
     width: 100%;
     background: radial-gradient(rgb(44, 44, 44),#000);
+    overflow: hidden;
 }
 #canvas1
 {
@@ -29,33 +30,80 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .intro
 {
+    position: relative;
     padding-top: 100px;
     text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 10px;    
     display: none;
 }
 
+.intro .img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: calc(100% / 3);
+    animation: offSideEntry 1s 1;
+}
+@keyframes offSideEntry 
+{
+   0%
+   {
+       transform: translateX(-500px);
+       opacity: 0.6;
+   }  
+   100%
+   {
+       transform: translateX(0px);
+       opacity: 1;
+   } 
+}
+
+.intro .img img
+{
+    position: relative;
+    height: 400px;
+}
+
+
 .intro.active
 {
-    display: block;
+    animation: introAnimation 1s  1 ease-in-out;
+    display: flex;
+    align-items: center;
+}
+@keyframes introAnimation 
+{
+    0%
+    {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }    
 }
 
 .intro h1
 {
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.041);
-    margin-top: 50%x;
     padding: 15px;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 62px;
     backdrop-filter: blur(7px);
     cursor: pointer;
 }
@@ -67,6 +115,7 @@ body
     width: 250px;
     cursor: pointer;
     padding: 20px;
+    margin-left: 20px;
     font-size: 22px;
     margin-top: 10px;
     font-weight: 700;
@@ -75,32 +124,123 @@ body
     overflow: hidden;
     background:linear-gradient(90deg,#f5008fab,#5900ffd7);
 }
-
-span
+.intro .playbtn:nth-child(2)
 {
-    position: absolute;
-    background: #fff;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
+    background:linear-gradient(90deg,#00d0f5ab,#8400ffd7);
 }
-
-@keyframes animate 
+.intro .mainHeading
+{
+    animation: sidemove 1s 1 ease-in-out;
+}
+@keyframes sidemove
 {
     0%
     {
-        width: 0px;
-        height: 0px;
-        opacity: 0.5;
+        transform: translateX(500px);
     }
     100%
     {
-        width: 500px;
-        height: 500px;
-        opacity: 0;
+        transform: translateX(0px);
     }
 }
+
+.intro .mainHeading.aboutActive
+{
+    display: none;
+}
+
+.intro .aboutme
+{
+    position: relative;
+    width: calc(100% / 2);
+    background-color: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+.intro .aboutme.aboutaction
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: sideEntry 1s 1 ease-in-out;
+}
+@keyframes sideEntry 
+{
+    0%
+    {
+        transform: translateX(500px);
+        opacity: 0.6;
+    }
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.intro .aboutme h2
+{
+    color: rgb(255, 0, 128);
+    font-family: Cambria;
+    font-style: italic;
+}
+.intro .aboutme h3
+{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+.intro .aboutme p
+{
+    margin-top: 10px;
+    font-family: cursive;
+    font-style: italic;
+    color: #fff;
+}
+
+
+.intro .aboutme p span
+{
+    font-size: 19px;
+    color: rgb(255, 196, 0);
+}
+
+.intro .aboutme .backbtn
+{
+    position: relative;
+    margin-top: 20px;
+    border: 0px;
+    padding: 15px;
+    font-size: 22px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 35px;
+    width: calc(100% / 3);
+    background-color: rgba(255, 255, 255, 0.116);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.intro .aboutme .backbtn::before
+{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:0%;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.intro .aboutme .backbtn:hover::before
+{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(90deg,rgb(0, 183, 255),rgb(0, 26, 255));
+}
+
 
 .main-game
 {
@@ -110,8 +250,32 @@ span
     display: none;
     padding: 20px;
 }
+
+.main-game.active
+{
+    animation: maingameAnimate 1s 1 ease-in-out;
+}
+@keyframes maingameAnimate
+{
+    0%
+    {
+        transform: scale(1.6);
+        opacity: 0.4
+    }
+    50%
+    {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .main-game .match
 {
+    position: relative;
     height: 40vh;
     width: 100%;
     display: flex;
@@ -127,8 +291,32 @@ span
     display: flex;
     justify-content: center;
     align-items: center;
+    
     backdrop-filter: blur(7px);
+    overflow: hidden; 
 }
+.main-game .match .hands:nth-child(2)
+{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-style: italic;
+    text-shadow: rgb(0, 0, 0) 2px 2px 0px;
+    flex-direction: column;
+    line-height: 3rem;
+}
+
+
+.main-game .match #hands2 img
+{
+   transform: rotateY(-195deg) scale(1.2);
+}
+.main-game .match #hands1 img
+{
+   transform:scale(1.2);
+}
+
 .main-game .score
 {
     height: 25vh;
@@ -165,7 +353,7 @@ span
     background-color: rgba(255, 255, 255, 0.096);
     padding: 5px;
     backdrop-filter: blur(5px);
-    border-radius: 35px;
+    
 }
 .main-game .score .mainBoard .player-score h2
 {
@@ -187,7 +375,6 @@ span
     background-color: rgba(255, 255, 255, 0.096);
     padding: 5px;
     backdrop-filter: blur(5px);
-    border-radius: 35px;
 }
 .main-game .score .mainBoard .computer-score h2
 {
@@ -202,25 +389,163 @@ span
     font-size: 25px;
     font-weight: 600;
 }
-
+/* yaha se kaam karna hai*/
 .main-game .option
 {
-    height: 15vh;
-    background-color: red;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
 }
+
+.main-game .option.inactiveOption
+{
+    display: none;
+}
+
 .main-game .option button
 {
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    backdrop-filter: blur(7px);
+    width: calc(100% / 6);
+    cursor: pointer;
+    padding: 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 35px;
+    opacity: 1;
+    overflow: hidden;
+    background:rgba(255, 255, 255, 0.185);
+}
+.main-game .option button::before
+{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 0%;
+    background:linear-gradient(90deg,red,yellow);
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.main-game .option button:nth-child(2)::before
+{
+    background:linear-gradient(90deg,rgb(0, 255, 242),rgb(0, 4, 255));
+}
+.main-game .option button:nth-child(3)::before
+{
+    background:linear-gradient(90deg,rgb(255, 0, 170),rgb(0, 4, 255));
+}
+.main-game .option button:hover::before
+{
+    width: 100%;
+}
 
+.main-game .mainResult
+{
+    
+    margin: 10px;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px; 
+    flex-direction: column;
+    line-height: 2em;
+    display: none;
+}
+
+/*-------yaha active karna hai -------------*/
+.main-game .mainResult.mainResultActive
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-game .mainResult span
+{
+    color: rgb(255, 208, 0);
+    font-size: 28px;
+    font-weight: 600;
+}
+.main-game .mainResult #restart
+{
+    position: relative;
+    border: 0px;
+    padding: 15px;
+    width: calc(100% / 4);
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: #fff;
+    overflow: hidden;
+}
+.main-game .mainResult .restart::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background:linear-gradient(90deg, green,darkgreen);
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+.main-game .mainResult .restart:hover::before
+{
+    width: 100%;
 }
 
 
+.main-game .exit-game
+{
+    position: relative;
+    height: 10vh;
+}
+.main-game .exit-game.inactiveExit
+{
+    display: none;
+}
 
-
-
-
+.main-game .exit-game button
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 0px;
+    padding: 20px;
+    width: calc(100% / 7);
+    height: auto;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.185);
+    border-radius: 35px;
+    cursor: pointer;
+    backdrop-filter: blur(7px);
+    overflow: hidden;
+}
+.main-game .exit-game button::before
+{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 0%;
+    background:linear-gradient(90deg,rgb(255, 61, 61),rgb(104, 0, 0));
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.main-game .exit-game button:hover::before
+{
+    width: 100%;
+}
 
 .main-game.active
 {
@@ -231,9 +556,65 @@ span
 {
     position: relative;
     z-index: 1000000;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: calc(100% / 2);
+    height: calc(100vh / 3);
     display: none;
+    border-radius: 35px;
+    border: 6px solid #fff;
+    backdrop-filter: blur(7px);
+    overflow: hidden;
 }
+
+.warning.active
+{
+    animation: warningAnimation 1s 1;
+}
+@keyframes warningAnimation
+{
+    0%
+    {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.warning .waring-message
+{
+    position: relative;
+    font-size: 22px;
+    width: 100%;
+    color: #ffff;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.warning .waring-message .btnopt
+{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.warning .waring-message .btnopt .btnop
+{
+    border: 0px;
+    padding: 10px;
+    margin: 10px;
+    width: 140px;
+}
+
 .warning.active
 {
     display: block;
