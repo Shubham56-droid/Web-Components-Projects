@@ -1,0 +1,130 @@
+/*---------------------------------------
+-------- Default Css For WebPage---------
+----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------
+------------ Background Css Start--------
+----------------------------------------*/
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  overflow: hidden;
+  z-index: -1;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);
+}
+.layer.layer1 {
+  background: #03a9f4;
+  transform: skewX(-45deg) translateX(0);
+  z-index: 1;
+}
+.layer.layer2 {
+  background: #ffffff;
+  transform: skewX(-45deg) translateX(-100px);
+  z-index: 3;
+}
+.layer.layer3 {
+  background: #ff0080;
+  transform: skewX(-45deg) translateX(-200px);
+  z-index: 5;
+}
+.layer.layer4 {
+  background: #222;
+  transform: skewX(-45deg) translateX(-300px);
+  z-index: 10;
+}
+.layer.layer5 {
+  background: #ff0080;
+  transform: skewX(45deg) translateX(0px);
+  z-index: 2;
+}
+.layer.layer6 {
+  background: #03a9f4;
+  transform: skewX(45deg) translateX(-100px);
+  z-index: 4;
+}
+.layer.layer7 {
+  background: #fff;
+  transform: skewX(45deg) translateX(-200px);
+  z-index: 6;
+}
+.layer.layer8 {
+  background: #222;
+  transform: skewX(45deg) translateX(-300px);
+  z-index: 8;
+}
+.layer.layer9 {
+  background: transparent;
+  transform: skewX(45deg) translateX(-300px);
+  z-index: 10;
+}
+/*---------------------------------------
+------------ Background Css End--------
+----------------------------------------*/
+
+/*-------------------------------------
+-------------Css for Game Heading------
+--------------------------------------*/
+.heading {
+  background-color: #ffbb00;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading p {
+  color: #000;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+.table {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table table {
+  padding: 20px;
+  background: #ffffff33;
+  backdrop-filter: blur(7px);
+  border-radius: 25px;
+}
+
+.table table .btn {
+  height: 150px;
+  width: 150px;
+  background-color: #a200ff;
+  border: 0px;
+  margin: 5px;
+  border-radius: 25px;
+  box-shadow: rgb(167, 167, 167) 1px 1px 1px;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+.table table .btn:hover {
+  box-shadow: rgb(40, 0, 105) 1px 1px 1px 1px,
+    rgb(55, 0, 100) inset 2px 2px 2px 2px;
+}
