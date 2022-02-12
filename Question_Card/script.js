@@ -121,7 +121,9 @@ function displayQuestion()
         console.log('confirm btn clicked');
         if(num != 0){
             permission = true;
+            cnfbtn.classList.add('active');
         }
+        
     });
 
     /*
@@ -375,6 +377,8 @@ function resetOptionActivity()
     permission = false;
     num = 0;
     helpMe.classList.add('active');
+    cnfbtn.classList.remove('active');
+    helpbtn.style.backgroundColor = '#000';
 }
 
 /*
@@ -391,10 +395,12 @@ function helpdisplay(count)
     console.log(userAnswers);
     helpMe.classList.remove('active');
     helptext.innerText = helpForQuestion[count];
+    helpbtn.style.backgroundColor = 'rgb(111, 0, 255)';
     });
 
     closemark.addEventListener('click',function(){
         helpMe.classList.add('active');
+        helpbtn.style.backgroundColor = '#000';
     })
 }
 
@@ -453,20 +459,27 @@ function ToCheckCorrectAnswer()
 
     const correntAnswer = document.getElementById('correntAnswer');
     const wrongAnswer = document.getElementById('wrongAnswer');
+    const userScore = document.getElementById('userScore');
+
+    correntAnswer.style.color = 'yellow';
+    wrongAnswer.style.color = 'yellow';
     if(wrongAns == 0)
     {
         correntAnswer.innerHTML = 'The Question Number For Correct answer are : ' + rightanswer;
         wrongAnswer.innerHTML = 'hurray! There is no wrong answer'; 
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     else if( rightAns == 0)
     {
         correntAnswer.innerHTML = 'Oops! There is no correct answer';
         wrongAnswer.innerHTML = 'The Question Number For Wrong answer are : ' + wronganswer ;
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     else
     {
         correntAnswer.innerHTML = 'The Question Number For Correct answer are : ' + rightanswer; 
         wrongAnswer.innerHTML = 'The  Question Number For Wrong answer are : ' + wronganswer ;
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     
 }
@@ -488,10 +501,11 @@ function skipBoxDisplayed(skipnum)
 
     const headingScore = document.getElementById('headingScore');
     const skipnote = document.getElementById('skipnote');
+    skipnote.style.color = '#fff';
 
-    headingScore.innerHTML = "You have Skiped " + skipnum + " Number Of Questions.";
+    headingScore.innerHTML = "You have Skiped " + skipnum + " Questions.";
     skipnote.innerHTML = 'Remeber : You need to click on confirm button after selecteing correct answer for each question and once clicked on confirm button you cannot change the option for that question.And it will be locked for that question.'
-    skipnote.style.fontSize = '18px';
+    skipnote.style.fontSize = '16px';
     skipnote.style.margin = '10px'
 
     if(skipnum != allCorrectAns.length)
@@ -513,22 +527,51 @@ function skipBoxDisplayed(skipnum)
 
     const correntAnswer = document.getElementById('correntAnswer');
     const wrongAnswer = document.getElementById('wrongAnswer');
+    const userScore = document.getElementById('userScore');
 
+
+    correntAnswer.style.color = 'yellow';
+    wrongAnswer.style.color = 'yellow';
     if(wrongAns == 0)
     {
         correntAnswer.innerHTML = 'The Question Number For Correct answer are : ' + rightanswer;
         wrongAnswer.innerHTML = 'There is no wrong answer'; 
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     else if( rightAns == 0)
     {
         correntAnswer.innerHTML = 'There is no correct answer';
         wrongAnswer.innerHTML = 'The Question Number For Wrong answer are : ' + wronganswer ;
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     else
     {
         correntAnswer.innerHTML = 'The Question Number For Correct answer are : ' + rightanswer; 
         wrongAnswer.innerHTML = 'The  Question Number For Wrong answer are : ' + wronganswer ;
+        userScore.innerHTML = 'The total Socre you have is ' +  rightAns + ' out of ' + allCorrectAns.length;
     }
     }
 
 }
+
+
+/*
+    Function for preloader to increament
+    the value from 0 to 100 percentage 
+*/
+function counterloader()
+{
+    var countval = setInterval(function(){
+
+        var c = parseInt($('.counter').text());
+
+        $('.counter').text((++c).toString());
+        if(c == 100){
+            clearInterval(countval);
+            $('.counter').addClass('hide')
+            $('.preloader').addClass('active')
+        }
+
+    },10); 
+}
+counterloader();

@@ -1,4 +1,10 @@
+/*
+    Importing the fonts google font website
+*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/*
+  Default CSS For The WebPage
+*/
 *
 {
     margin: 0px;
@@ -6,33 +12,55 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     text-transform: capitalize;
+    transition: 0.2s ease-in-out all;
 }
+/*
+  Setting Up some nice background
+   using linear gradient here
+*/
 body
 {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: antiquewhite;
+  background: linear-gradient(45deg,rgb(122, 122, 122) 50%,rgb(255, 255, 255) 50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+body::before
+{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg,transparent 50%,rgb(70, 70, 70) 50%);
+}
+/*
+   Div which content main game cards
+*/
 .main
 {
     position: relative;
-    /**/
-    /* background-color: blue; */
-    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.24);
+    height: 80vh;
     width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    backdrop-filter: blur(9px);
+    padding: 10px;
 }
+/*
+  Avtivation and deactivation while displaying result
+*/
 .main.inactive
 {
    display: none;
 }
+
 .main .answer
 {
    position: relative;
@@ -64,46 +92,68 @@ body
   margin-top: 15px;
   width: 50%;
   height: 100px;
-  /**/
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.main .buttons #reloading:hover
+{
+   background-color: green;
+}
+
+.main .buttons #nextbtn:hover
+{
+  background-color: rgb(255, 145, 0);
+}
+
+/*
+  Change in effect when clicked on options
+*/
 #option1.active
 {
   color: red;
   background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 25px;
+  padding: 5px;
 }
 #option2.active
 {
   color: red;
   background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 25px;
+  padding: 5px;
 }
 #option3.active
 {
   color: red;
   background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 25px;
+  padding: 5px;
 }
 #option4.active
 {
   color: red;
   background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 25px;
+  padding: 5px;
 }
 
+/*
+  help me box activation and
+  displaying the help content
+*/
 .main .helpMe
 {
   position: relative;
   margin-top: 30px;
   background-color: rgb(111, 0, 255);
-  padding: 10px;
+  padding: 15px;
   width: 70%;
   text-align: center;
   color: white;
-  font-weight: 600;
-
+  font-weight: 500;
 }
 .helpMe.active
 {
@@ -117,20 +167,31 @@ body
   cursor: pointer;
 }
 
+.helpMe .fa-xmark:hover
+{
+  color: red;
+}
+
+.helpMe #helptext
+{
+  margin-right: 30px;
+}
+
 .scoreboard
 {
   position: relative;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.733);
   height: 60vh;
   width: 60vw;
   text-align: center;
   border-radius: 55px;
   padding: 30px;
+  backdrop-filter: blur(15px);
 }
 .scoreboard #headingScore
 {
-  color: #fff;
-  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
   font-size: 35px;
 }
 .scoreboard .answerNum
@@ -139,22 +200,89 @@ body
   position: relative;
   margin-top: 50px;
   line-height: 1.9rem;
-  font-style: italic;
   font-size: 22px;
 }
+
 .scoreboard button
 {
-  margin-top: 30px;
+  position: relative;
+  margin-top: 10px;
+  height: 40px;
+  width: 150px;
+  outline: none;
   border: 0px;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 15px;
   cursor: pointer;
+  border-radius: 25px;
+  background-color: rgb(206, 206, 206);
+  color: rgb(0, 0, 0);
+}
+.scoreboard button:hover
+{
+  background: rgba(94, 94, 94, 0.322);
+  color: #fff;
 }
 
 .scoreboard.inactive
 {
   display: none;
+}
+
+#cnfbtn.active
+{
+  background:rgb(255, 0, 119);
+}
+
+
+/*
+  CSS for the preloader at
+  the begining of the website
+*/
+.preloader
+{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.preloader::before
+{
+   content: "Let's Begin";
+   position: absolute;
+   font-size: 12rem;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.116);
+   font-weight: 800;
+}
+
+.preloader.active
+{
+   transform: translateX(-100vw);
+   transition: ease-in-out 2s;
+   transition-delay: 1s;
+}
+.counter
+{
+  position: relative;
+  color: #fff;
+  font-size: 16em;
+  z-index: 1;
+}
+.counter::after
+{
+  content: '%';
+  font-size: 0.5em;
+}
+
+.hide
+{
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
 }

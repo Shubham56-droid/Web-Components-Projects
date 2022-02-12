@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="preloader">
+        <div class="counter">0</div>
+        <img src="" alt="">
+    </div>
     <!-----------  Main Question Body ------------->
     <div class="main" id="main">
     <h2 class="demo"></h2>
@@ -21,10 +25,10 @@
         <p class="options4" id="option4"></p>
     </div>
     <div class="buttons">
-        <button id="cnfbtn">Confirm Answer</button>
+        <button id="cnfbtn" >Confirm Answer</button>
         <button onclick="displayQuestion()" id="nextbtn">Next Question</button>
         <button id="helpbtn">Help</button>
-        <button onclick="restart()">Restart</button>
+        <button onclick="restart()" id="reloading">Restart</button>
     </div>
     <div class="helpMe active" id="helpMe">
         <i class="fa-solid fa-xmark" id="closemark"></i>
@@ -37,10 +41,16 @@
         <div class="answerNum">
             <p id="correntAnswer"></p>
             <p id="wrongAnswer"></p>
+            <p id="userScore"></p>
             <p id="skipnote"></p>
         </div>
         <button onclick="restart()">Restart</button>
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
