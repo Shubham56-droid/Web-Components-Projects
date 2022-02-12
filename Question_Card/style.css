@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: capitalize;
+}
+body
+{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main
+{
+    position: relative;
+    /**/
+    /* background-color: blue; */
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main.inactive
+{
+   display: none;
+}
+.main .answer
+{
+   position: relative;
+   margin-top: 30px;
+   line-height: 2rem;
+}
+.main .answer p
+{
+  cursor: pointer;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  text-align: center;
+}
+.main button
+{
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: black;
+  color: #fff;
+}
+.main .buttons
+{
+  position: relative;
+  margin-top: 15px;
+  width: 50%;
+  height: 100px;
+  /**/
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#option1.active
+{
+  color: red;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#option2.active
+{
+  color: red;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#option3.active
+{
+  color: red;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#option4.active
+{
+  color: red;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+.main .helpMe
+{
+  position: relative;
+  margin-top: 30px;
+  background-color: rgb(111, 0, 255);
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+
+}
+.helpMe.active
+{
+  display: none;
+}
+
+.helpMe .fa-xmark
+{
+  float: right;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.scoreboard
+{
+  position: relative;
+  background: rgb(0, 0, 0);
+  height: 60vh;
+  width: 60vw;
+  text-align: center;
+  border-radius: 55px;
+  padding: 30px;
+}
+.scoreboard #headingScore
+{
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+}
+.scoreboard .answerNum
+{
+  color: rgb(255, 0, 157);
+  position: relative;
+  margin-top: 50px;
+  line-height: 1.9rem;
+  font-style: italic;
+  font-size: 22px;
+}
+.scoreboard button
+{
+  margin-top: 30px;
+  border: 0px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.scoreboard.inactive
+{
+  display: none;
+}
