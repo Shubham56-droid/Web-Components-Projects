@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="title">Profile</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="title">Messages</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="title">Setting</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <span class="title">Password</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+<!--------------Script for icons -------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let list = document.querySelectorAll('.list');
+    for (let i = 0; i < list.length; i++){
+        list[i].addEventListener('click',()=>{
+            let j=0;
+            while(j< list.length)
+            {
+                list[j++].className = 'list';
+            }
+            list[i].className = 'list active';
+        })
+    }
+</script>
+</body>
+</html>
