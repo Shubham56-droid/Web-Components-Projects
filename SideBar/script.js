@@ -1,6 +1,9 @@
 let menuToggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+
 menuToggle.addEventListener('click',()=>{
-    menuToggle.classList.toggle('active')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
 })
 
 
