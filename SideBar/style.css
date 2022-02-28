@@ -80,3 +80,18 @@ body
     line-height: 60px;
     white-space: normal;
 }
+.toggle
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #4d5bf9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.toggle.active
+{
+    
+}
