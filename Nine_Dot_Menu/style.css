@@ -1,0 +1,59 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #10131c;
+}
+
+.navigation
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #212532;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+
+.navigation.active
+{
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+}
+
+.navigation span
+{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s, width 0.5s,height 0.5s,background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation.active span{
+    width: 45px;
+    height: 45px;
+    background: #333849;
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
