@@ -57,3 +57,21 @@ body
     background: #333849;
     transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
 }
+
+.navigation span ion-icon 
+{
+    transition: 0.5s;
+    font-size: 0em;
+}
+
+.navigation.active span ion-icon
+{
+    font-size: 1.35em;
+    color: #fff;
+}
+
+.navigation.active span:hover ion-icon
+{
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 25px #2dfc52);
+}
