@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Hiroshima Nagasaki</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>Hiroshima<a href="#">Nagasaki</a></h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">home</a></li>
+          <li><a href="background.html">background</a></li>
+          <li><a href="bombs.html">bomb development</a></li>
+          <li><a href="hibakusha.html">hibakusha</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/7.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/8.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/9.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/10.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/11.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/12.jpg" width="600" height="300" alt="photo_six" /></li>
+      </ul>
+      <div class='music'>
+        <!-- <audio controls autoplay>
+          <source src="./audio/song.mp3" type="audio/ogg">
+          <source src="./audio/song.mp3" type="audio/mpeg">
+          
+        </audio> -->
+
+
+        <audio src="./audio/song.mp3"></audio>
+      </div>
+
+      <div id="content">
+        <center>
+
+        <h1 class='subtopic'>Ato<span class='spaned'>m</span>ic b<span class='spaned'>o</span>mbi<span class='spaned'>n</span>gs of Hir<span class='spaned'>o</span>s<span class='spaned'>h</span>ima an<span class='spaned'>d</span> Na<span class='spaned'>g</span>asak<span class='spaned'>i</span></h1>
+
+        <p>The United States detonated two nuclear weapons over the Japanese cities of <span class='spaned'>Hiroshima</span> and <span class='spaned'>Nagasaki</span> on 6 and 9 August 1945, respectively. The two bombings <span class='spaned'>killed</span> between 129,000 and 226,000 people, most of whom were civilians, and remain the only use of <span class='spaned'>nuclear weapons</span> in armed conflict</p>
+        <p>In the final year of <span class='spaned'>World War II</span>, the Allies prepared for a costly invasion of the Japanese mainland. This undertaking was preceded by a conventional and firebombing campaign that devastated 67 Japanese cities. The war in Europe concluded when Germany surrendered on 8 May 1945, and the Allies turned their full attention to the Pacific War. By July 1945, the Allies' <span class='spaned'>Manhattan Project</span> had produced two types of atomic bombs: <span class='spaned'>"Fat Man"</span>, a plutonium implosion-type nuclear weapon; and <span class='spaned'>"Little Boy"</span>, an enriched uranium gun-type fission weapon. The 509th Composite Group of the United States Army Air Forces was trained and equipped with the specialized Silverplate version of the <span class='spaned'>Boeing B-29 Superfortress</span>, and deployed to Tinian in the Mariana Islands. The Allies called for the unconditional surrender of the Imperial Japanese armed forces in the Potsdam Declaration on 26 July 1945, the alternative being <span class='spaned'>"prompt and utter destruction"</span>. Japan ignored the ultimatum.</p>
+        <h2 style="text-decoration: underline;">Casualties and losses</h2>
+        <div class="tobold">
+          Hiroshima
+        </div>
+        <ul>
+          <li>20,000 soldiers killed</li>
+          <li>70,000–126,000 civilians killed</li>
+        </ul>
+
+        <div class="tobold">
+          Nagasaki
+        </div>
+        <ul>
+          <li>39,000–80,000 killed</li>
+          <li>At least 150 soldiers killed</li>
+        </ul>
+        </center>
+      </div>
+    </div>
+    
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+    
+    var d = new Date();
+    document.getElementById('year').innerHTML = d.getFullYear();
+  </script>
+  <script>
+    Document.addEventListener("DOMContentLoaded", event => {
+      const audio = document.querySelector("audio");
+      audio.volume = 0.2;
+      audio.play();
+    });
+  </script>
+</body>
+</html>

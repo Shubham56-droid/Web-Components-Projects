@@ -1,0 +1,173 @@
+/*
+*	 Author: beshleyua
+*	 Author URL: http://themeforest.net/user/beshleyua
+*/
+
+/* TABLE OF CONTENTS
+	- Theme Blue
+*/
+
+/* - Theme Blue */
+.cursor-follower {
+	background: #4fcbe9;
+}
+
+a:hover {
+	color: #4fcbe9;
+}
+
+.ink {
+	background: #4fcbe9;
+}
+
+a.btn,
+.btn,
+.single-post-text input[type="submit"] {
+	color: #4fcbe9;
+	border-color: #4fcbe9;
+}
+
+button:hover {
+	border-bottom-color: #4fcbe9;
+}
+
+.section.started .started-content .h-title strong {
+	color: #4fcbe9;
+}
+
+.section.started .started-content .h-subtitle strong,
+.section.started .started-content .typed-subtitle strong {
+	color: #4fcbe9;
+}
+
+.section.started .mouse_btn {
+	color: #4fcbe9;
+}
+
+.info-list ul li strong {
+	color: #4fcbe9;
+}
+
+.resume-items .resume-item.active .date {
+	color: #4fcbe9;
+}
+
+.skills ul li .progress .percentage {
+	background: #4fcbe9;
+}
+
+.skills.list ul li .name:before {
+	color: #4fcbe9;
+}
+
+.skills.dotted ul li .progress .da span {
+	background: #4fcbe9;
+}
+
+.skills.circles .progress .bar, 
+.skills.circles .progress.p51 .fill, 
+.skills.circles .progress.p52 .fill, 
+.skills.circles .progress.p53 .fill, 
+.skills.circles .progress.p54 .fill, 
+.skills.circles .progress.p55 .fill, 
+.skills.circles .progress.p56 .fill, 
+.skills.circles .progress.p57 .fill, 
+.skills.circles .progress.p58 .fill, 
+.skills.circles .progress.p59 .fill, 
+.skills.circles .progress.p60 .fill, 
+.skills.circles .progress.p61 .fill, 
+.skills.circles .progress.p62 .fill, 
+.skills.circles .progress.p63 .fill, 
+.skills.circles .progress.p64 .fill, 
+.skills.circles .progress.p65 .fill, 
+.skills.circles .progress.p66 .fill, 
+.skills.circles .progress.p67 .fill, 
+.skills.circles .progress.p68 .fill, 
+.skills.circles .progress.p69 .fill, 
+.skills.circles .progress.p70 .fill, 
+.skills.circles .progress.p71 .fill, 
+.skills.circles .progress.p72 .fill, 
+.skills.circles .progress.p73 .fill, 
+.skills.circles .progress.p74 .fill, 
+.skills.circles .progress.p75 .fill, 
+.skills.circles .progress.p76 .fill, 
+.skills.circles .progress.p77 .fill, 
+.skills.circles .progress.p78 .fill, 
+.skills.circles .progress.p79 .fill, 
+.skills.circles .progress.p80 .fill, 
+.skills.circles .progress.p81 .fill, 
+.skills.circles .progress.p82 .fill, 
+.skills.circles .progress.p83 .fill, 
+.skills.circles .progress.p84 .fill, 
+.skills.circles .progress.p85 .fill, 
+.skills.circles .progress.p86 .fill, 
+.skills.circles .progress.p87 .fill, 
+.skills.circles .progress.p88 .fill, 
+.skills.circles .progress.p89 .fill, 
+.skills.circles .progress.p90 .fill, 
+.skills.circles .progress.p91 .fill, 
+.skills.circles .progress.p92 .fill, 
+.skills.circles .progress.p93 .fill, 
+.skills.circles .progress.p94 .fill, 
+.skills.circles .progress.p95 .fill, 
+.skills.circles .progress.p96 .fill, 
+.skills.circles .progress.p97 .fill, 
+.skills.circles .progress.p98 .fill, 
+.skills.circles .progress.p99 .fill, 
+.skills.circles .progress.p100 .fill {
+	border-color: #4fcbe9;
+}
+
+.service-items .service-item .icon {
+	color: #4fcbe9;
+}
+
+.section.works .filters label.glitch-effect {
+	color: #4fcbe9;
+}
+
+.started-content .date {
+	color: #4fcbe9;
+	border-color: #4fcbe9;
+}
+
+.single-post-text p a,
+.comment-text p a {
+	color: #4fcbe9;
+}
+
+blockquote {
+	border-left-color: #4fcbe9;
+}
+
+.single-post-text ul > li:before,
+.comment-text ul > li:before {
+	background: #4fcbe9;
+}
+
+.post-text-bottom span.cat-links a {
+	color: #4fcbe9;
+}
+
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span {
+	color: #4fcbe9;
+	border-color: #4fcbe9;
+}
+
+.content-sidebar .widget ul li a:hover {
+	color: #4fcbe9;
+}
+
+.content-sidebar .tagcloud a {
+	color: #4fcbe9;
+	border-color: #4fcbe9;
+}
+
+.pricing-item .icon {
+	color: #4fcbe9;
+}
+
+.pricing-item .feature-list ul li strong {
+	background: #4fcbe9;
+}
