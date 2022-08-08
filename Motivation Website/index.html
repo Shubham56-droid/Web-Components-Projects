@@ -43,9 +43,9 @@
     <h3 class="h3-index"><em>Zig Ziglar</em></h3>
 
   </div>
-  <hr>
+
   <div class="select">
-    <h3 class="h3-index">Click on your Today's Inspiration</h3>
+    <h3 class="nav_link">Click on your Today's Inspiration</h3>
     <ol>
       <li><a href="ElonMusk.html">Elon Musk</a></li>
       <li><a href="MSD.html">MS Dhoni</a></li>
@@ -59,41 +59,44 @@
 
     </ol>
   </div>
-
-
   <hr>
+
   <div class="form">
     <h4 class="h4-index">
       Have Some More Stories?Write us by filling the form below
     </h4>
-    <form class="form1" action="mailto:kamaltulsiyani11@gmail.com" method="post" enctype="text/plain">
-      <label>Your Name</label>
-      <input type="text" name="Your Name" value=""><br>
-      <label>Your Email</label>
-      <input type="email" name="Your Email" value=""><br>
-      <input type="checkbox" name="Permission Regarding Updates" value="">
-      <label>Want to Recieve Newsletter and Updates</label><br>
-      <label>Your Story</label><br>
-      <textarea name="Your Story" rows="10" cols="50"></textarea>
-
-      <br>
-      <input type="submit" name="Submit" value="Join D1MM" class="button">
-      <br><br>
-
-
-
-
+   
+    <form class="form1" action="mailto:kamaltulsiyani11@gmail.com" method="post" 	enctype="text/plain">
+      	<label>Your Name:</label>
+      	<input type="text" name="Your Name" placeholder="Your name.."><br>
+      	<label>Your Email:</label>
+      	<input type="email" name="Your Email" placeholder="Your email.."><br>
+      	<input type="checkbox" name="Permission Regarding Updates" value="">
+      	<label style= "font-size:15px;">I want to recieve newsletter and updates</label><br>
+      	<label>Your Story:</label><br>
+      	<textarea name="Your Story" rows="10" cols=85" placeholder = "Write something here.."></textarea>
+	<br>
+      	<input type="submit" name="Submit" value="Join D1MM" class="button">
+      	<br><br>
     </form>
+
+    
   </div>
 
 
-  <br><br><br>
   <div class="footer">
-    <img src="IMAGES/writer.png" alt="About Author" width="40px"> <a href="authorinfo.html">About Author</a>
-    <img src="IMAGES/phone.png" alt="contact" width="40px"> <a href="ContactUs.html">Contact Us</a>
+    <img src="IMAGES/writer.png" usemap="#link1" alt="About Author" style =" padding-left:10px" height="20px" width="20px"> <a href="authorinfo.html">About Author</a>
+
+    <img src="IMAGES/phone.png" usemap="#link2" alt="contact"  style ="padding-left:20px" height="20px" width="20px"> <a href="ContactUs.html" >Contact Us</a>
+  
   </div>
 
-
+  <map name = "link1">
+	<area shape = "default" coords="25,25,25,25" alt="Author" href="authorinfo.htm">
+    </map>
+    <map name = "link2">
+	<area shape = "default" coords="25,25,25,25" alt="Contact" href="ContactUs.htm">
+    </map>
 </body>
 
 </html>
