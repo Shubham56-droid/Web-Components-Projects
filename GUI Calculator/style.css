@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(5, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
@@ -31,6 +31,18 @@ body {
 
 .calculator-grid > button:hover {
   background-color: #a9a9a9;
+}
+
+.calculator-grid > button:active {
+  background-color: #B28B8B;
+}
+
+.span-row-two {
+  grid-row: span 2;
+}
+
+.span-two-colorless {
+  grid-column: span 2;
 }
 
 .span-two {
