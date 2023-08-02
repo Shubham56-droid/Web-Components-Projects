@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Hiroshima Nagasaki</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>Hiroshima<a href="#">Nagasaki</a></h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">home</a></li>
+          <li ><a href="background.html">background</a></li>
+          <li class="current"><a href="bombs.html">bomb development</a></li>
+          <li><a href="hibakusha.html">hibakusha</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/7.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/8.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/9.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/10.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/11.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/12.jpg" width="600" height="300" alt="photo_six" /></li>
+      </ul>
+      
+    <div id="content">
+      <center>
+      <h1 class='subtopic'>A<span class='spaned'>t</span>om<span class='spaned'>i</span>c <span class='spaned'>b</span>om<span class='spaned'>b</span> d<span class='spaned'>e</span>v<span class='spaned'>e</span>lop<span class='spaned'>m</span>en<span class='spaned'>t</span></h1>
+
+      <h3 class='sbtopic'><span class='spaned'>Manhattan</span> Project</h3>
+      
+      <p>The discovery of <span class='spaned'>nuclear fission</span> by German chemists <span class='spaned'>Otto Hahn </span>and <span class='spaned'>Fritz Strassmann</span> in 1938, and its theoretical explanation by <span class='spaned'>Lise Meitner</span> and Otto Frisch, made the development of an atomic bomb a theoretical possibility. Fears that a German atomic bomb project would develop <span class='spaned'>atomic weapons</span> first, especially among scientists who were <span class='spaned'>refugees</span> from <span class='spaned'>Nazi Germany</span> and other fascist countries, were expressed in the <span class='spaned'>Einstein-Szilard</span> letter. This prompted preliminary research in the United States in late <span class='spaned'>1939</span>. Progress was slow until the arrival of the <span class='spaned'>British MAUD Committee</span> report in late 1941, which indicated that only 5 to 10 kilograms of isotopically enriched <span class='spaned'>uranium-235</span> were needed for a bomb instead of tons of natural uranium and a neutron moderator like heavy <span class='spaned'>water</span>.</p>
+
+      <p>The <span class='spaned'>1943 Quebec Agreement</span> merged the nuclear weapons projects of the <span class='spaned'>United Kingdom</span> and <span class='spaned'>Canada</span>, Tube Alloys and the Montreal Laboratory, with the Manhattan Project, under the direction of <span class='spaned'>Major General Leslie R. Groves</span>, Jr., of the U.S. Army Corps of Engineers. Groves appointed J. Robert Oppenheimer to organize and head the project's Los Alamos Laboratory in New Mexico, where <span class='spaned'>bomb design</span> work was carried out. Two types of bombs were eventually developed, both named by <span class='spaned'>Robert Serber</span>. Little Boy was a gun-type fission weapon that used <span class='spaned'>uranium-235</span>, a rare isotope of uranium separated at the Clinton Engineer Works at Oak Ridge, Tennessee. The other, known as a <span class='spaned'>Fat Man device</span>, was a more powerful and efficient, but more complicated, implosion-type nuclear weapon that used <span class='spaned'>plutonium</span> created in nuclear reactors at Hanford, Washington.</p>
+      </center>
+    </div>
+
+
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>

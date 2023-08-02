@@ -1,0 +1,164 @@
+.profile-card{
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+    margin: 100px auto;
+    background-color: #D32086;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 6px 6px 50px  #D32086,
+                -6px -6px 50px #D32086;                
+}       
+.picture{
+    width: 200px;
+    height: 250px;
+    background-image: url(./1.png);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: .5s;
+}
+.bio{
+    color: #23070B;
+    text-align: center;
+    opacity: 0;
+}
+.bio  h5{
+    margin-top: -15px;
+}
+.bio p{
+    font-size: 12px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-card:hover .picture{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(21,2,131);
+    border-radius: 50%;
+    top: -30px;
+}
+.profile-card:hover .bio{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+body{
+    background-color: black;
+}
+/* /////////////////////////////////////////////////// */
+.picture2{
+    width: 200px;
+    height: 250px;
+    background-image: url(./2.png);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.profile-card2{
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+    margin: 100px auto;
+    background-color: #4ABEED;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 6px 6px 50px  #4ABEED,
+                -6px -6px 50px #4ABEED;                
+}       
+.bio2{
+    color: #23070B;
+    text-align: center;
+    opacity: 0;
+}
+.bio2  h5{
+    margin-top: -15px;
+}
+.bio2 p{
+    font-size: 12px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-card2:hover .picture2{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(21,2,131);
+    border-radius: 50%;
+    top: -30px;
+}
+.profile-card2:hover .bio2{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.picture3{
+    width: 200px;
+    height: 250px;
+    background-image: url(./3.png);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.profile-card3{
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+    margin: 100px auto;
+    background-color: #FFCE1F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 6px 6px 50px  #FFCE1F,
+                -6px -6px 50px #FFCE1F;                
+}       
+.bio3{
+    color: #23070B;
+    text-align: center;
+    opacity: 0;
+}
+.bio3  h5{
+    margin-top: -15px;
+}
+.bio3 p{
+    font-size: 12px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-card3:hover .picture3{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(21,2,131);
+    border-radius: 50%;
+    top: -30px;
+}
+.profile-card3:hover .bio3{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
