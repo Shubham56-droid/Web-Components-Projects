@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #e4f9ff 90%, #fa163f 100%);
+  background-color:#BB8FCE;
   margin: 0;
 }
 
@@ -10,9 +10,10 @@ body {
 }
 
 .description {
-  background: linear-gradient(to bottom, #12cad6 0%, #0fabbc 100%);
+  background: #fa163f;
   font-family: 'Merienda One', cursive;
   font-size: 15px;
+  color:white;
   margin-left: auto;
   margin-right: auto;
   margin: 0;
@@ -23,34 +24,60 @@ body {
 .form {
   display: block;
   text-align: center;
-  background: linear-gradient(to top, #0fabbc 0%, #e4f9ff 100%);
   border: 0;
   color: #000066;
   font-family: 'Merienda One', cursive;
   font-size: 23px;
   margin: 0;
+  margin-bottom:10px;
   text-decoration: underline;
   text-shadow: 6px 1px 9px #48d1cc;
 }
 
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+.form1 {
+  background: #E8DAEF;
+  border:2px solid;
+  border-color:black;
   text-align: left;
+  display: inline-block;
+  padding:30px;
+}
+
+input[type=text], select {
+  width:100%;
+  padding: 10px 25px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:15px;
+
+}
+
+input[type=email], select {
+  width:100%;
+  padding: 10px 25px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:15px;
+
 }
 
 .footer {
   display: inline-block;
   text-align: center;
-  background: linear-gradient(to bottom, #ff99cc -50%, #fa163f 100%);
-  position: fixed;
+  background: linear-gradient(to bottom, #ff99cc -50%, #B900B9 100%);
+  padding-top:10px;
+  padding-bottom:5px;
   width: 100%;
   left: 0;
-  bottom: 0;
+  top: 20px;
+  bottom: 10px;
   color: #3e206d;
   font-family: 'Merienda One', cursive;
-  font-size: 23px;
+  font-size: 18px;
   text-decoration: underline;
   text-shadow: 6px 1px 9px #e066ff;
 }
@@ -61,22 +88,37 @@ form {
 
 .h2-index {
   margin-bottom: 0;
+
 }
 
 .h3-index {
-  margin-top: 0;
+  margin-top:0;
+  margin-right: 250px;
+  font-size:20px;
+  text-align:right;
+  
 }
 
 .h4-index {
   margin-top: 0;
+  font-weight:bold;
+}
+
+.nav_link{
+  margin-top: 0;
+  margin-right: 500px;
+  font-size:20px;
+  text-align:left;
+  color:#4088FF;
 }
 
 hr {
   border-style: none;
-  border-top-style: dotted;
+  border-top-style: solid;
   border-color: dodgerblue;
-  border-width: 10px;
-  width: 9%;
+  border-width: 2px;
+  border-color:black;
+
 }
 
 .t {
@@ -89,8 +131,13 @@ hr {
 
 li {
   list-style-position: inside;
+  text-decoration:bold;
+  color:#04F7FE;
+  
 }
-
+a{
+color:#04F7FE;
+}
 ol {
   list-style-type: decimal;
   padding-left: 15%;
@@ -101,27 +148,29 @@ p {
 }
 
 .slogan {
-  background: linear-gradient(to bottom, #0fabbc 0%, #e4f9ff 100%);
+  background:linear-gradient(to bottom,#fa163f  0%, #3e206d 100%);
   border: 0;
-  color: white;
+  color: #ED0FFF;
   display: inline-block;
   font-family: 'Marko One', serif;
   font-size: 23px;
   margin: 0;
   padding: 1px;
   text-align: center;
-  text-decoration: underline;
+
   text-shadow: 6px 1px 9px #000066;
 }
 
 .select {
-  background: linear-gradient(to bottom, #e4f9ff 0%, #0fabbc 100%);
+  background: linear-gradient(to bottom, #3e206d 0%, #BB8FCE 100%);
   border: 0;
-  color: #3e206d;
+  color: white;
   font-family: 'Merienda One', cursive;
   font-size: 23px;
   margin: 0;
   padding: 1px 1px 1px 35%;
+  text-align:left;
+  justify-content:align-left;
   text-decoration: underline;
   text-shadow: 6px 1px 9px #e066ff;
 }
@@ -140,16 +189,17 @@ p {
 }
 
 .quote1 {
-  left: 30px;
+  bottom: 40px;
+  left: 15px;
   opacity: 0.6;
   position: relative;
 }
 
 .quote2 {
-  bottom: 50px;
+  bottom: 40px;
   opacity: 0.6;
   position: relative;
-  right: 95px;
+  right: 20px;
 }
 
 .button {
@@ -161,10 +211,9 @@ p {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #fa163f;
+  background-color: #2E86C1;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #cc6699;
   font-family: 'Merienda One', cursive;
 }
 
